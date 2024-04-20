@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 140049734}
   - component: {fileID: 140049735}
   m_Layer: 0
-  m_Name: Square (47)
+  m_Name: Tile47
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 150854978}
   - component: {fileID: 150854979}
   m_Layer: 0
-  m_Name: Square (21)
+  m_Name: Tile21
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -435,7 +435,7 @@ GameObject:
   - component: {fileID: 153837865}
   - component: {fileID: 153837866}
   m_Layer: 0
-  m_Name: Square (13)
+  m_Name: Tile13
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -519,7 +519,7 @@ GameObject:
   - component: {fileID: 176036576}
   - component: {fileID: 176036577}
   m_Layer: 0
-  m_Name: Square (16)
+  m_Name: Tile16
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -603,7 +603,7 @@ GameObject:
   - component: {fileID: 180060388}
   - component: {fileID: 180060389}
   m_Layer: 0
-  m_Name: Square (10)
+  m_Name: Tile10
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -687,7 +687,7 @@ GameObject:
   - component: {fileID: 197271776}
   - component: {fileID: 197271777}
   m_Layer: 0
-  m_Name: Square (2)
+  m_Name: Tile2
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -771,7 +771,7 @@ GameObject:
   - component: {fileID: 217843529}
   - component: {fileID: 217843530}
   m_Layer: 0
-  m_Name: Square (4)
+  m_Name: Tile4
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -855,7 +855,7 @@ GameObject:
   - component: {fileID: 263078906}
   - component: {fileID: 263078907}
   m_Layer: 0
-  m_Name: Square (23)
+  m_Name: Tile23
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -939,7 +939,7 @@ GameObject:
   - component: {fileID: 444447247}
   - component: {fileID: 444447248}
   m_Layer: 0
-  m_Name: Square (20)
+  m_Name: Tile20
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1023,7 +1023,7 @@ GameObject:
   - component: {fileID: 466985810}
   - component: {fileID: 466985811}
   m_Layer: 0
-  m_Name: Square (18)
+  m_Name: Tile18
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1199,7 +1199,7 @@ GameObject:
   - component: {fileID: 532345189}
   - component: {fileID: 532345190}
   m_Layer: 0
-  m_Name: Square (29)
+  m_Name: Tile29
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1367,7 +1367,7 @@ GameObject:
   - component: {fileID: 584251480}
   - component: {fileID: 584251481}
   m_Layer: 0
-  m_Name: Square (5)
+  m_Name: Tile5
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1451,7 +1451,7 @@ GameObject:
   - component: {fileID: 638109778}
   - component: {fileID: 638109779}
   m_Layer: 0
-  m_Name: Square (6)
+  m_Name: Tile6
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1535,7 +1535,7 @@ GameObject:
   - component: {fileID: 675691306}
   - component: {fileID: 675691307}
   m_Layer: 0
-  m_Name: Square (43)
+  m_Name: Tile43
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1619,7 +1619,7 @@ GameObject:
   - component: {fileID: 680707956}
   - component: {fileID: 680707957}
   m_Layer: 0
-  m_Name: Square (26)
+  m_Name: Tile26
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1703,7 +1703,7 @@ GameObject:
   - component: {fileID: 741856421}
   - component: {fileID: 741856422}
   m_Layer: 0
-  m_Name: Square (24)
+  m_Name: Tile24
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1787,7 +1787,7 @@ GameObject:
   - component: {fileID: 785878549}
   - component: {fileID: 785878550}
   m_Layer: 0
-  m_Name: Square (48)
+  m_Name: Tile48
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1871,7 +1871,7 @@ GameObject:
   - component: {fileID: 825865249}
   - component: {fileID: 825865250}
   m_Layer: 0
-  m_Name: Square (22)
+  m_Name: Tile22
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2002,14 +2002,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aed10a8ee355a345ac14461fae6bcde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiles:
-  - {fileID: 1046962609}
-  - {fileID: 197271776}
-  - {fileID: 1801988004}
-  - {fileID: 217843529}
-  - {fileID: 584251480}
-  InvokeRate: 1
-  Square1: {fileID: 0}
 --- !u!114 &1028882264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2033,7 +2025,7 @@ GameObject:
   - component: {fileID: 1046962609}
   - component: {fileID: 1046962610}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: Tile1
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2117,7 +2109,7 @@ GameObject:
   - component: {fileID: 1227603498}
   - component: {fileID: 1227603499}
   m_Layer: 0
-  m_Name: Square (37)
+  m_Name: Tile37
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2201,7 +2193,7 @@ GameObject:
   - component: {fileID: 1257987964}
   - component: {fileID: 1257987965}
   m_Layer: 0
-  m_Name: Square (36)
+  m_Name: Tile36
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2285,7 +2277,7 @@ GameObject:
   - component: {fileID: 1300876125}
   - component: {fileID: 1300876126}
   m_Layer: 0
-  m_Name: Square (40)
+  m_Name: Tile40
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2369,7 +2361,7 @@ GameObject:
   - component: {fileID: 1317028360}
   - component: {fileID: 1317028361}
   m_Layer: 0
-  m_Name: Square (28)
+  m_Name: Tile28
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2537,7 +2529,7 @@ GameObject:
   - component: {fileID: 1406736550}
   - component: {fileID: 1406736551}
   m_Layer: 0
-  m_Name: Square (38)
+  m_Name: Tile38
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2621,7 +2613,7 @@ GameObject:
   - component: {fileID: 1410281144}
   - component: {fileID: 1410281145}
   m_Layer: 0
-  m_Name: Square (39)
+  m_Name: Tile39
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2705,7 +2697,7 @@ GameObject:
   - component: {fileID: 1472483558}
   - component: {fileID: 1472483559}
   m_Layer: 0
-  m_Name: Square (14)
+  m_Name: Tile14
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2789,7 +2781,7 @@ GameObject:
   - component: {fileID: 1489736382}
   - component: {fileID: 1489736383}
   m_Layer: 0
-  m_Name: Square (9)
+  m_Name: Tile9
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2873,7 +2865,7 @@ GameObject:
   - component: {fileID: 1515423697}
   - component: {fileID: 1515423698}
   m_Layer: 0
-  m_Name: Square (30)
+  m_Name: Tile30
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2957,7 +2949,7 @@ GameObject:
   - component: {fileID: 1617638101}
   - component: {fileID: 1617638102}
   m_Layer: 0
-  m_Name: Square (25)
+  m_Name: Tile25
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3041,7 +3033,7 @@ GameObject:
   - component: {fileID: 1631434937}
   - component: {fileID: 1631434938}
   m_Layer: 0
-  m_Name: Square (15)
+  m_Name: Tile15
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3125,7 +3117,7 @@ GameObject:
   - component: {fileID: 1658424127}
   - component: {fileID: 1658424128}
   m_Layer: 0
-  m_Name: Square (8)
+  m_Name: Tile8
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3209,7 +3201,7 @@ GameObject:
   - component: {fileID: 1731936351}
   - component: {fileID: 1731936352}
   m_Layer: 0
-  m_Name: Square (44)
+  m_Name: Tile44
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3293,7 +3285,7 @@ GameObject:
   - component: {fileID: 1739368966}
   - component: {fileID: 1739368967}
   m_Layer: 0
-  m_Name: Square (35)
+  m_Name: Tile35
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3377,7 +3369,7 @@ GameObject:
   - component: {fileID: 1739686708}
   - component: {fileID: 1739686709}
   m_Layer: 0
-  m_Name: Square (19)
+  m_Name: Tile19
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3461,7 +3453,7 @@ GameObject:
   - component: {fileID: 1759881520}
   - component: {fileID: 1759881521}
   m_Layer: 0
-  m_Name: Square (33)
+  m_Name: Tile33
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3545,7 +3537,7 @@ GameObject:
   - component: {fileID: 1801988004}
   - component: {fileID: 1801988005}
   m_Layer: 0
-  m_Name: Square (3)
+  m_Name: Tile3
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3629,7 +3621,7 @@ GameObject:
   - component: {fileID: 1849270372}
   - component: {fileID: 1849270373}
   m_Layer: 0
-  m_Name: Square (27)
+  m_Name: Tile27
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3713,7 +3705,7 @@ GameObject:
   - component: {fileID: 1888308388}
   - component: {fileID: 1888308389}
   m_Layer: 0
-  m_Name: Square (41)
+  m_Name: Tile41
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3797,7 +3789,7 @@ GameObject:
   - component: {fileID: 1893921335}
   - component: {fileID: 1893921336}
   m_Layer: 0
-  m_Name: Square (7)
+  m_Name: Tile7
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3881,7 +3873,7 @@ GameObject:
   - component: {fileID: 1941872127}
   - component: {fileID: 1941872128}
   m_Layer: 0
-  m_Name: Square (42)
+  m_Name: Tile42
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3965,7 +3957,7 @@ GameObject:
   - component: {fileID: 1945709105}
   - component: {fileID: 1945709106}
   m_Layer: 0
-  m_Name: Square (12)
+  m_Name: Tile12
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4049,7 +4041,7 @@ GameObject:
   - component: {fileID: 1952839904}
   - component: {fileID: 1952839905}
   m_Layer: 0
-  m_Name: Square (46)
+  m_Name: Tile46
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4133,7 +4125,7 @@ GameObject:
   - component: {fileID: 1963902918}
   - component: {fileID: 1963902919}
   m_Layer: 0
-  m_Name: Square (45)
+  m_Name: Tile45
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4248,7 +4240,7 @@ GameObject:
   - component: {fileID: 2029331408}
   - component: {fileID: 2029331409}
   m_Layer: 0
-  m_Name: Square (32)
+  m_Name: Tile32
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4332,7 +4324,7 @@ GameObject:
   - component: {fileID: 2055950935}
   - component: {fileID: 2055950936}
   m_Layer: 0
-  m_Name: Square (31)
+  m_Name: Tile31
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4416,7 +4408,7 @@ GameObject:
   - component: {fileID: 2091620966}
   - component: {fileID: 2091620967}
   m_Layer: 0
-  m_Name: Square (34)
+  m_Name: Tile34
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4500,7 +4492,7 @@ GameObject:
   - component: {fileID: 2099540672}
   - component: {fileID: 2099540673}
   m_Layer: 0
-  m_Name: Square (17)
+  m_Name: Tile17
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4584,7 +4576,7 @@ GameObject:
   - component: {fileID: 2139989136}
   - component: {fileID: 2139989137}
   m_Layer: 0
-  m_Name: Square (11)
+  m_Name: Tile11
   m_TagString: tiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
