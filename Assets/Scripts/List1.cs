@@ -1,20 +1,18 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class List1 : MonoBehaviour
 {
-    public List<string> tiles = new List<string>(); // Make it public if you want to assign GameObjects in the Unity Inspector
-    public List<GameObject> tileObjects = new List<GameObject>(); // List to store existing game objects associated with tiles
+    public List<string> tiles = new List<string>();
+    public List<GameObject> tileObjects = new List<GameObject>();
 
-    // Assign GameObjects to corresponding strings in the list
     void AssignTileObjects()
     {
         for (int i = 0; i < tiles.Count; i++)
         {
-            if (i < tileObjects.Count) // Make sure there are enough GameObjects in the tileObjects list
+            if (i < tileObjects.Count)
             {
-                tileObjects[i].name = tiles[i]; // Assign the string as the name of the GameObject
+                tileObjects[i].name = tiles[i];
             }
             else
             {
@@ -26,20 +24,17 @@ public class List1 : MonoBehaviour
 
     void Start()
     {
-        // Populate the list of strings (if not assigned in the Unity Inspector)
         if (tiles.Count == 0)
         {
             Debug.LogWarning("The list of tiles is empty. Please assign strings.");
         }
 
-        // Call the method to assign GameObjects to strings
         AssignTileObjects();
 
-        // Access the GameObject associated with a specific tile
-        Debug.Log("Game object associated with Tile2: " + GetGameObjectByString("Tile2").name);
+        // Move the GameObject associated with Tile2
+        MoveTile("Tile2", new Vector3(2f, 0f, 0f)); // Adjust the Vector3 as needed
     }
 
-    // Method to get the game object associated with a specific string
     GameObject GetGameObjectByString(string tileName)
     {
         GameObject foundObject = null;
@@ -52,6 +47,20 @@ public class List1 : MonoBehaviour
             }
         }
         return foundObject;
+    }
+
+    void MoveTile(string tileName, Vector3 newPosition)
+    {
+        GameObject tileObject = GetGameObjectByString(tileName);
+        if (tileObject != null)
+        {
+            tileObject.transform.position = newPosition;
+            Debug.Log("Moved " + tileName + " to position: " + newPosition);
+        }
+        else
+        {
+            Debug.LogWarning("Tile " + tileName + " not found.");
+        }
     }
 
     void Update()
