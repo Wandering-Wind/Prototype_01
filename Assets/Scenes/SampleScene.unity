@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 57664982}
   - component: {fileID: 57664981}
+  - component: {fileID: 57664983}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -256,6 +257,118 @@ Transform:
   - {fileID: 552874958}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &57664983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57664980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b9b8d1e6b63f7848a5b5430b8462ab0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiles:
+  - Tile1
+  - Tile2
+  - Tile3
+  - Tile4
+  - Tile5
+  - Tile6
+  - Tile7
+  - Tile8
+  - Tile9
+  - Tile10
+  - Tile11
+  - Tile12
+  - Tile13
+  - Tile14
+  - Tile15
+  - Tile16
+  - Tile17
+  - Tile18
+  - Tile19
+  - Tile20
+  - Tile21
+  - Tile22
+  - Tile23
+  - Tile24
+  - Tile25
+  - Tile26
+  - Tile27
+  - Tile28
+  - Tile29
+  - Tile30
+  - Tile31
+  - Tile32
+  - Tile33
+  - Tile34
+  - Tile35
+  - Tile36
+  - Tile37
+  - Tile38
+  - Tile39
+  - Tile40
+  - Tile41
+  - Tile42
+  - Tile43
+  - Tile44
+  - Tile45
+  - Tile46
+  - Tile47
+  - Tile48
+  - Tile49
+  tileObjects:
+  - {fileID: 1046962608}
+  - {fileID: 197271775}
+  - {fileID: 1801988003}
+  - {fileID: 217843528}
+  - {fileID: 584251479}
+  - {fileID: 638109777}
+  - {fileID: 1893921334}
+  - {fileID: 1658424126}
+  - {fileID: 1489736381}
+  - {fileID: 180060387}
+  - {fileID: 2139989135}
+  - {fileID: 1945709104}
+  - {fileID: 153837864}
+  - {fileID: 1472483557}
+  - {fileID: 1631434936}
+  - {fileID: 176036575}
+  - {fileID: 2099540671}
+  - {fileID: 466985809}
+  - {fileID: 1739686707}
+  - {fileID: 444447246}
+  - {fileID: 150854977}
+  - {fileID: 825865248}
+  - {fileID: 263078905}
+  - {fileID: 741856420}
+  - {fileID: 1617638100}
+  - {fileID: 680707955}
+  - {fileID: 1849270371}
+  - {fileID: 1317028359}
+  - {fileID: 532345188}
+  - {fileID: 1515423696}
+  - {fileID: 2055950934}
+  - {fileID: 2029331407}
+  - {fileID: 1759881519}
+  - {fileID: 2091620965}
+  - {fileID: 1739368965}
+  - {fileID: 1257987963}
+  - {fileID: 1227603497}
+  - {fileID: 1406736549}
+  - {fileID: 1410281143}
+  - {fileID: 1300876124}
+  - {fileID: 1888308387}
+  - {fileID: 1941872126}
+  - {fileID: 675691305}
+  - {fileID: 1731936350}
+  - {fileID: 1963902917}
+  - {fileID: 1952839903}
+  - {fileID: 140049733}
+  - {fileID: 785878548}
+  - {fileID: 552874957}
 --- !u!1 &140049733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1953,7 +2066,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1028882262}
-  - component: {fileID: 1028882261}
   - component: {fileID: 1028882264}
   m_Layer: 0
   m_Name: GameManager
@@ -1962,18 +2074,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1028882261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1028882260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cd72cff195220e40b6a0165f7b13304, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1028882262
 Transform:
   m_ObjectHideFlags: 0
@@ -1996,7 +2096,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028882260}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b9b8d1e6b63f7848a5b5430b8462ab0, type: 3}
   m_Name: 

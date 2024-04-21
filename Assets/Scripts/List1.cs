@@ -16,7 +16,7 @@ public class List1 : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("Not enough GameObjects in tileObjects list.");
+                Debug.LogWarning("Not enough GameObjects in tileObjects list.");//tile checks
                 break;
             }
         }
@@ -26,16 +26,16 @@ public class List1 : MonoBehaviour
     {
         if (tiles.Count == 0)
         {
-            Debug.LogWarning("The list of tiles is empty. Please assign strings.");
+            Debug.LogWarning("The list of tiles is empty. Please assign strings.");//tile checks
         }
 
         AssignTileObjects();
 
-        // Move the GameObject associated with Tile2
-        MoveTile("Tile2", new Vector3(2f, 0f, 0f)); // Adjust the Vector3 as needed
+        // Moves the GameObject associated with Tile2
+        MoveTile("Tile2", new Vector3(2f, 0f, 0f)); // Adjusts the tile which needs to change, we should adjust it so that the player can choose the tile they want to change
     }
 
-    GameObject GetGameObjectByString(string tileName)
+    GameObject GetGameObjectByString(string tileName) //finds game object by string
     {
         GameObject foundObject = null;
         foreach (GameObject obj in tileObjects)
