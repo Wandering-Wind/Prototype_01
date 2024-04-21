@@ -44,8 +44,11 @@ public class Movement : MonoBehaviour
 
 
             transform.Translate(1.25f, 0, 0);
+   
+
        
             
+
 
     }
 }
