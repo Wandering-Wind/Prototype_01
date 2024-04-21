@@ -4,6 +4,7 @@ using UnityEngine;
 
 
 
+
 public class Movement : MonoBehaviour
 
 {
@@ -41,8 +42,12 @@ public class Movement : MonoBehaviour
             transform.Translate(-1.25f, 0, 0);
         else if (Input.GetKeyDown(KeyCode.RightArrow))
 
+
             transform.Translate(1.25f, 0, 0);
+   
+
        
+            
 
 
     }
