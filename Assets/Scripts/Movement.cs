@@ -35,13 +35,17 @@ public class Movement : MonoBehaviour
         //rb.velocity = new Vector3(speedX, speedY);
 
         if (Input.GetKeyDown(KeyCode.UpArrow))
-            transform.Translate(0, 1.75f, 0);
+            transform.Translate(0, 1.25f, 0);
         else if (Input.GetKeyDown(KeyCode.DownArrow))
-            transform.Translate(0, -1, 75f, 0);
+            transform.Translate(0, -1, 25f, 0);
         else if (Input.GetKeyDown(KeyCode.LeftArrow))
-            transform.Translate(-1.75f, 0, 0);
+            transform.Translate(-1.25f, 0, 0);
         else if (Input.GetKeyDown(KeyCode.RightArrow))
-            transform.Translate(1.75f, 0, 0);
+
+
+            transform.Translate(1.25f, 0, 0);
+       
+            
 
     }
 }
