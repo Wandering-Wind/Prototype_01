@@ -13,13 +13,13 @@ public class TileArray : MonoBehaviour
     {
 
 
-        for (int i = 0; i < 50; i++)
-        {
-            numberArray[i] = i + 1;
-            tiles[i] = GameObject.Find("Square (" +  i  + ")");
-        }
-        Destroy(tiles[0]);
-        tiles = GameObject.FindGameObjectsWithTag("tiles");
+        //for (int i = 0; i < 50; i++)
+        //{
+        //    numberArray[i] = i + 1;
+        //    tiles[i] = GameObject.Find("Square (" +  i  + ")");
+        //}
+        //Destroy(tiles[0]);
+        //tiles = GameObject.FindGameObjectsWithTag("tiles");
         
       
 
