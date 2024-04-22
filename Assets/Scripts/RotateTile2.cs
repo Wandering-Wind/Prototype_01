@@ -35,7 +35,8 @@ public class TileRotation : MonoBehaviour
 
     
     // Coroutine to smoothly rotate the tile towards the target angle
-    IEnumerator RotateTowardsAngle(float targetAngle)
+     
+    IEnumerator RotateTowardsAngle (float targetAngle)
     {
         // Get the current rotation angle
         float currentAngle = transform.eulerAngles.z;
