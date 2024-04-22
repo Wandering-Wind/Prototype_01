@@ -1,52 +1,65 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-
-
-
 public class Movement : MonoBehaviour
-
 {
-    //basic movement script without the block to block ting
+    // Basic movement parameters
     public float movSpeed;
     float speedX, speedY;
     Rigidbody2D rb;
-    // Start is called before the first frame update
+
+    // Tile-based movement parameters
+    public float tileSize = 1.25f;
+    private Vector3 targetPosition;
+    private bool isMoving;
+
     void Start()
     {
-
-       rb = GetComponent<Rigidbody2D>(); 
-
-       //rb = GetComponent<Rigidbody2D>(); 
-
+        rb = GetComponent<Rigidbody2D>();
+        targetPosition = transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
-
+        // Basic movement
         speedX = Input.GetAxisRaw("Horizontal") * movSpeed;
         speedY = Input.GetAxisRaw("Vertical") * movSpeed;
         rb.velocity = new Vector3(speedX, speedY);
 
-        //speedX = Input.GetAxisRaw("Horizontal") * movSpeed;
-        //speedY = Input.GetAxisRaw("Vertical") * movSpeed;
-        //rb.velocity = new Vector3(speedX, speedY);
+        // Tile-based movement
+        if (!isMoving)
+        {
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+                MovePlayer(Vector3.up);
+            else if (Input.GetKeyDown(KeyCode.DownArrow))
+                MovePlayer(Vector3.down);
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+                MovePlayer(Vector3.left);
+            else if (Input.GetKeyDown(KeyCode.RightArrow))
+                MovePlayer(Vector3.right);
+        }
+    }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-            transform.Translate(0, 1.25f, 0);
-        else if (Input.GetKeyDown(KeyCode.DownArrow))
-            transform.Translate(0, -1.25f, 0);
-        else if (Input.GetKeyDown(KeyCode.LeftArrow))
-            transform.Translate(-1.25f, 0, 0);
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
-            transform.Translate(1.25f, 0, 0);
-   
+    // Method to move the player to the next tile
+    private void MovePlayer(Vector3 direction)
+    {
+        targetPosition = transform.position + direction * tileSize;
+        isMoving = true;
+    }
 
-       
-            
+    void FixedUpdate()
+    {
+        if (isMoving)
+        {
+            // Move towards the target position
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, movSpeed * Time.fixedDeltaTime);
 
-
+            // Check if reached the target position
+            if (Vector3.Distance(transform.position, targetPosition) < 0.01f)
+            {
+                // Snap to the target position
+                transform.position = targetPosition;
+                isMoving = false;
+            }
+        }
     }
 }
