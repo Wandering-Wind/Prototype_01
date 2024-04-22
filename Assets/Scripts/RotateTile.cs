@@ -35,7 +35,7 @@ public class NewBehaviourScript : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("clicks")
+        Debug.Log("clicks");
         transform.Rotate(0, 0, -90);
     }
 }
