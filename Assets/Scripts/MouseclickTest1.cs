@@ -14,5 +14,7 @@ public class MouseclickTest1 : MonoBehaviour
     void OnMouseDown()
     {
         Debug.Log("clicks");
+        // Destroy(gameObject);
+        //transform.Rotate (0, 0, -90);
     }
 }
