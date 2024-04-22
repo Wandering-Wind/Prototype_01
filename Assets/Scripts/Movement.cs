@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//Movement for player only, not for tiles or anything like that
 public class Movement : MonoBehaviour
 {
     // Basic movement parameters
