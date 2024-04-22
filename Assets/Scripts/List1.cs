@@ -16,7 +16,7 @@ public class List1 : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("Not enough GameObjects in tileObjects list.");//tile checks
+                Debug.LogWarning("Not enough GameObjects in tileObjects list.");
                 break;
             }
         }
@@ -26,16 +26,16 @@ public class List1 : MonoBehaviour
     {
         if (tiles.Count == 0)
         {
-            Debug.LogWarning("The list of tiles is empty. Please assign strings.");//tile checks
+            Debug.LogWarning("The list of tiles is empty. Please assign strings.");
         }
 
         AssignTileObjects();
 
-        // Moves the GameObject associated with Tile2
-        MoveTile("Tile.zero", new Vector3(0.25f, 0f, 0f)); // Adjusts the tile which needs to change, we should adjust it so that the player can choose the tile they want to change
+        // Example of destroying multiple tiles at once
+        //DestroyTiles(new List<string> { "Tile1", "Tile2" });
     }
 
-    GameObject GetGameObjectByString(string tileName) //finds game object by string
+    GameObject GetGameObjectByString(string tileName)
     {
         GameObject foundObject = null;
         foreach (GameObject obj in tileObjects)
@@ -49,17 +49,20 @@ public class List1 : MonoBehaviour
         return foundObject;
     }
 
-    void MoveTile(string tileName, Vector3 newPosition)
+    void DestroyTiles(List<string> tileNames)
     {
-        GameObject tileObject = GetGameObjectByString(tileName);
-        if (tileObject != null)
+        foreach (string tileName in tileNames)
         {
-            tileObject.transform.position = newPosition;
-            Debug.Log("Moved " + tileName + " to position: " + newPosition);
-        }
-        else
-        {
-            Debug.LogWarning("Tile " + tileName + " not found.");
+            GameObject tileObject = GetGameObjectByString(tileName);
+            if (tileObject != null)
+            {
+                Destroy(tileObject);
+                Debug.Log("Destroyed " + tileName);
+            }
+            else
+            {
+                Debug.LogWarning("Tile " + tileName + " not found.");
+            }
         }
     }
 
@@ -67,8 +70,6 @@ public class List1 : MonoBehaviour
     {
 
     }
-
-    
 }
 
 
