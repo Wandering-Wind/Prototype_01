@@ -32,7 +32,7 @@ public class List1 : MonoBehaviour
         AssignTileObjects();
 
         // Moves the GameObject associated with Tile2
-        MoveTile("Tile10", new Vector3(2f, 0f, 0f)); // Adjusts the tile which needs to change, we should adjust it so that the player can choose the tile they want to change
+        MoveTile("Tile10", new Vector3(0.25f, 0f, 0f)); // Adjusts the tile which needs to change, we should adjust it so that the player can choose the tile they want to change
     }
 
     GameObject GetGameObjectByString(string tileName) //finds game object by string
@@ -67,6 +67,8 @@ public class List1 : MonoBehaviour
     {
 
     }
+
+    
 }
 
 
