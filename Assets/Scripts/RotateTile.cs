@@ -20,15 +20,22 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ClockwiseRotation == false)
-        {
-            rotZ = Time.deltaTime * rotationSpeed;
-        }
-        else
-        {
-            rotZ += -Time.deltaTime * rotationSpeed;
-        }
+        //This is code for continuous rotation
+        //if (ClockwiseRotation == false)
+        //{
+        //    rotZ = Time.deltaTime * rotationSpeed;
+        //}
+        //else
+        //{
+        //    rotZ += -Time.deltaTime * rotationSpeed;
+        //}
 
-        transform.rotation = Quaternion.Euler(0,0,rotZ);
+        //transform.rotation = Quaternion.Euler(0,0,rotZ);
+    }
+
+    private void OnMouseDown()
+    {
+        Debug.Log("clicks")
+        transform.Rotate(0, 0, -90);
     }
 }
