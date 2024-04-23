@@ -4,6 +4,10 @@ using UnityEngine;
 //Movement for player only, not for tiles or anything like that
 public class Movement : MonoBehaviour
 {
+    public float moveSpeed = 5f;
+    private bool canMove = true;
+    private bool isDoubleMove = false; // Flag to track if player's movement distance is doubled
+
     // Basic movement parameters
     public float movSpeed;
     float speedX, speedY;
@@ -30,6 +34,7 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
+
         // Basic movement
         speedX = Input.GetAxisRaw("Horizontal") * movSpeed;
         speedY = Input.GetAxisRaw("Vertical") * movSpeed;
@@ -38,8 +43,10 @@ public class Movement : MonoBehaviour
         //whereIam = parent.transform;
         //get the name to find out which tile you are on to get a reference to the four surrounding tiles.
 
+=======
+
         // Tile-based movement
-        if (!isMoving)
+        if (canMove && !isMoving)
         {
             if (Input.GetKeyDown(KeyCode.UpArrow))
                 MovePlayer(Vector3.up);
@@ -51,14 +58,36 @@ public class Movement : MonoBehaviour
                 MovePlayer(Vector3.right);
         }
     }
+    
+    public void StopMovement(float duration)
+    {
+        canMove = false;
+        Invoke("EnableMovement", duration);
+    }
+
+    public void SetDoubleMove(bool isDouble)
+    {
+        isDoubleMove = isDouble;
+    }
+
+    private void EnableMovement()
+    {
+        canMove = true;
+    }
 
     // Method to move the player to the next tile
     private void MovePlayer(Vector3 direction)
     {
-        targetPosition = transform.position + direction * tileSize;
+        // Calculate the movement distance based on whether the player's movement is doubled
+        float distance = isDoubleMove ? tileSize * 2f : tileSize;
+        targetPosition = transform.position + direction * distance;
         isMoving = true;
+
         Debug.Log(isMoving);
         return;
+=======
+        canMove = true;
+
     }
 
     void FixedUpdate()
