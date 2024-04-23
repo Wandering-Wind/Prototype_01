@@ -454,6 +454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b9b8d1e6b63f7848a5b5430b8462ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: 10
   tiles:
   - Tile1
   - Tile2
@@ -3762,15 +3763,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
       propertyPath: m_Color.b
-      value: 0.06557121
+      value: 0.7058824
       objectReference: {fileID: 0}
     - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
       propertyPath: m_Color.g
-      value: 0.9843137
+      value: 0.050980393
       objectReference: {fileID: 0}
     - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
       propertyPath: m_Color.r
-      value: 0.027450953
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
       propertyPath: m_SortingOrder
@@ -4212,7 +4213,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &675364937
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4293,7 +4294,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  movSpeed: 2
   tileSize: 1.25
 --- !u!50 &675364940
 Rigidbody2D:
@@ -5725,6 +5725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b9b8d1e6b63f7848a5b5430b8462ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: 10
   tiles:
   - 1
   - 2
