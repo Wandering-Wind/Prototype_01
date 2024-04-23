@@ -6,6 +6,7 @@ TagManager:
   tags:
   - tiles
   - Trap
+  - Gate
   layers:
   - Default
   - TransparentFX
