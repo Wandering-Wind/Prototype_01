@@ -43,7 +43,7 @@ public class Movement : MonoBehaviour
         //whereIam = parent.transform;
         //get the name to find out which tile you are on to get a reference to the four surrounding tiles.
 
-=======
+
 
         // Tile-based movement
         if (canMove && !isMoving)
@@ -85,7 +85,7 @@ public class Movement : MonoBehaviour
 
         Debug.Log(isMoving);
         return;
-=======
+
         canMove = true;
 
     }
