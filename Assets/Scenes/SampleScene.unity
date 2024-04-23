@@ -4212,7 +4212,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &675364937
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4645,11 +4645,19 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 584251480}
+    m_TransformParent: {fileID: 1893921335}
     m_Modifications:
     - target: {fileID: 1113756802943640593, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
+
+      value: -0.45000005
+
       value: -0.42
+
+=======
+      value: -2.95
+>>>>>>> parent of 93458fe (tile fixes)
       objectReference: {fileID: 0}
     - target: {fileID: 1113756802943640593, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10577,6 +10585,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 414968520}
+  - {fileID: 690408553}
   m_Father: {fileID: 57664982}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1893921336
