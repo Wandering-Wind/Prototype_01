@@ -38,4 +38,11 @@ public class NewBehaviourScript : MonoBehaviour
         Debug.Log("clicks");
         transform.Rotate(0, 0, -90);
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Player"))
+        {
+            collision.transform.SetParent(transform, true);
+        }
+    }
 }
