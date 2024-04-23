@@ -175,6 +175,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateRight
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -237,6 +249,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateRight
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -298,6 +322,18 @@ PrefabInstance:
     - target: {fileID: 6466742813546983995, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
       propertyPath: m_Name
       value: GateRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -426,6 +462,7 @@ Transform:
   - {fileID: 2029331408}
   - {fileID: 1759881520}
   - {fileID: 2091620966}
+  - {fileID: 1739368966}
   - {fileID: 1257987964}
   - {fileID: 1227603498}
   - {fileID: 1406736550}
@@ -668,6 +705,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateVertical
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -689,7 +738,6 @@ GameObject:
   - component: {fileID: 140049734}
   - component: {fileID: 140049735}
   - component: {fileID: 140049737}
-  - component: {fileID: 140049736}
   - component: {fileID: 140049738}
   m_Layer: 0
   m_Name: Tile47
@@ -766,18 +814,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &140049736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 140049733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &140049737
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -910,7 +946,6 @@ GameObject:
   - component: {fileID: 150854978}
   - component: {fileID: 150854979}
   - component: {fileID: 150854981}
-  - component: {fileID: 150854980}
   - component: {fileID: 150854982}
   m_Layer: 0
   m_Name: Tile21
@@ -987,18 +1022,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &150854980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 150854977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &150854981
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1069,7 +1092,6 @@ GameObject:
   - component: {fileID: 153837865}
   - component: {fileID: 153837866}
   - component: {fileID: 153837868}
-  - component: {fileID: 153837867}
   - component: {fileID: 153837869}
   m_Layer: 0
   m_Name: Tile13
@@ -1146,18 +1168,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &153837867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153837864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &153837868
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1228,7 +1238,6 @@ GameObject:
   - component: {fileID: 176036576}
   - component: {fileID: 176036577}
   - component: {fileID: 176036579}
-  - component: {fileID: 176036578}
   - component: {fileID: 176036580}
   m_Layer: 0
   m_Name: Tile16
@@ -1305,18 +1314,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &176036578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176036575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &176036579
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1387,7 +1384,6 @@ GameObject:
   - component: {fileID: 180060388}
   - component: {fileID: 180060389}
   - component: {fileID: 180060391}
-  - component: {fileID: 180060390}
   - component: {fileID: 180060392}
   m_Layer: 0
   m_Name: Tile10
@@ -1409,7 +1405,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1683503547}
   - {fileID: 1768719386}
   - {fileID: 432344679}
   m_Father: {fileID: 57664982}
@@ -1466,18 +1461,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &180060390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 180060387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &180060391
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1548,7 +1531,6 @@ GameObject:
   - component: {fileID: 197271776}
   - component: {fileID: 197271777}
   - component: {fileID: 197271779}
-  - component: {fileID: 197271778}
   - component: {fileID: 197271780}
   m_Layer: 0
   m_Name: Tile2
@@ -1625,18 +1607,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &197271778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197271775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &197271779
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1748,6 +1718,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateVertical
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1831,7 +1813,6 @@ GameObject:
   - component: {fileID: 217843529}
   - component: {fileID: 217843530}
   - component: {fileID: 217843532}
-  - component: {fileID: 217843531}
   - component: {fileID: 217843533}
   m_Layer: 0
   m_Name: Tile4
@@ -1908,18 +1889,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &217843531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 217843528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &217843532
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2031,6 +2000,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateVertical
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2052,7 +2033,6 @@ GameObject:
   - component: {fileID: 263078906}
   - component: {fileID: 263078907}
   - component: {fileID: 263078909}
-  - component: {fileID: 263078908}
   - component: {fileID: 263078910}
   m_Layer: 0
   m_Name: Tile23
@@ -2129,18 +2109,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &263078908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 263078905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &263078909
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2248,6 +2216,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
     - target: {fileID: 7504969002483511268, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_Name
       value: GateBottom
@@ -2308,6 +2284,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 101600949382070867, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7504969002483511268, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
@@ -2434,6 +2422,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
     - target: {fileID: 7504969002483511268, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_Name
       value: GateHorizontal
@@ -2496,6 +2492,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
     - target: {fileID: 7504969002483511268, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_Name
       value: GateHorizontal
@@ -2557,6 +2561,14 @@ PrefabInstance:
     - target: {fileID: 101600949382070867, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
       objectReference: {fileID: 0}
     - target: {fileID: 7504969002483511268, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_Name
@@ -2624,6 +2636,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateRight
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2645,7 +2669,6 @@ GameObject:
   - component: {fileID: 444447247}
   - component: {fileID: 444447248}
   - component: {fileID: 444447250}
-  - component: {fileID: 444447249}
   - component: {fileID: 444447251}
   m_Layer: 0
   m_Name: Tile20
@@ -2722,18 +2745,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &444447249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444447246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &444447250
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2804,7 +2815,6 @@ GameObject:
   - component: {fileID: 466985810}
   - component: {fileID: 466985811}
   - component: {fileID: 466985813}
-  - component: {fileID: 466985812}
   - component: {fileID: 466985814}
   m_Layer: 0
   m_Name: Tile18
@@ -2881,18 +2891,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &466985812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 466985809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &466985813
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2999,6 +2997,14 @@ PrefabInstance:
     - target: {fileID: 101600949382070867, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
       objectReference: {fileID: 0}
     - target: {fileID: 7504969002483511268, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_Name
@@ -3158,6 +3164,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateRight
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3216,6 +3234,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
     - target: {fileID: 7504969002483511268, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_Name
       value: GateHorizontal
@@ -3241,7 +3267,6 @@ GameObject:
   - component: {fileID: 532345189}
   - component: {fileID: 532345190}
   - component: {fileID: 532345192}
-  - component: {fileID: 532345191}
   - component: {fileID: 532345193}
   m_Layer: 0
   m_Name: Tile29
@@ -3318,18 +3343,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &532345191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532345188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &532345192
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3400,7 +3413,6 @@ GameObject:
   - component: {fileID: 552874958}
   - component: {fileID: 552874959}
   - component: {fileID: 552874961}
-  - component: {fileID: 552874960}
   - component: {fileID: 552874962}
   m_Layer: 0
   m_Name: Tile49
@@ -3477,18 +3489,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &552874960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 552874957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &552874961
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3559,7 +3559,6 @@ GameObject:
   - component: {fileID: 584251480}
   - component: {fileID: 584251481}
   - component: {fileID: 584251483}
-  - component: {fileID: 584251482}
   - component: {fileID: 584251484}
   m_Layer: 0
   m_Name: Tile5
@@ -3581,6 +3580,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 690408553}
   - {fileID: 36081048}
   - {fileID: 690408553}
   m_Father: {fileID: 57664982}
@@ -3637,18 +3637,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &584251482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584251479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &584251483
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3762,15 +3750,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
       propertyPath: m_Color.b
-      value: 0.06557121
+      value: 0.38431376
       objectReference: {fileID: 0}
     - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
       propertyPath: m_Color.g
-      value: 0.9843137
+      value: 0.050980397
       objectReference: {fileID: 0}
     - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
       propertyPath: m_Color.r
-      value: 0.027450953
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
       propertyPath: m_SortingOrder
@@ -3796,11 +3784,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 101600949382070867, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.009
       objectReference: {fileID: 0}
     - target: {fileID: 101600949382070867, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.79999995
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 101600949382070867, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3833,6 +3821,14 @@ PrefabInstance:
     - target: {fileID: 101600949382070867, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
       objectReference: {fileID: 0}
     - target: {fileID: 7504969002483511268, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_Name
@@ -3900,6 +3896,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateRight
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3921,7 +3929,6 @@ GameObject:
   - component: {fileID: 638109778}
   - component: {fileID: 638109779}
   - component: {fileID: 638109781}
-  - component: {fileID: 638109780}
   - component: {fileID: 638109782}
   m_Layer: 0
   m_Name: Tile6
@@ -3999,18 +4006,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &638109780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638109777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &638109781
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4122,6 +4117,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateVertical
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4183,6 +4190,18 @@ PrefabInstance:
     - target: {fileID: 6466742813546983995, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
       propertyPath: m_Name
       value: GateRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4292,6 +4311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bddb3f2f8fa19ae44a7b5b27fa388725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 5
   movSpeed: 2
   tileSize: 1.25
 --- !u!50 &675364940
@@ -4332,7 +4352,6 @@ GameObject:
   - component: {fileID: 675691306}
   - component: {fileID: 675691307}
   - component: {fileID: 675691309}
-  - component: {fileID: 675691308}
   - component: {fileID: 675691310}
   m_Layer: 0
   m_Name: Tile43
@@ -4409,18 +4428,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &675691308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 675691305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &675691309
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4491,7 +4498,6 @@ GameObject:
   - component: {fileID: 680707956}
   - component: {fileID: 680707957}
   - component: {fileID: 680707959}
-  - component: {fileID: 680707958}
   - component: {fileID: 680707960}
   m_Layer: 0
   m_Name: Tile26
@@ -4568,18 +4574,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &680707958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 680707955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &680707959
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4649,7 +4643,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1113756802943640593, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
       propertyPath: m_LocalPosition.x
+
+      value: -0.45000005
+
       value: -0.42
+
       objectReference: {fileID: 0}
     - target: {fileID: 1113756802943640593, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4690,6 +4688,18 @@ PrefabInstance:
     - target: {fileID: 6466742813546983995, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
       propertyPath: m_Name
       value: GateVertical
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4815,6 +4825,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateRight
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4836,7 +4858,6 @@ GameObject:
   - component: {fileID: 741856421}
   - component: {fileID: 741856422}
   - component: {fileID: 741856424}
-  - component: {fileID: 741856423}
   - component: {fileID: 741856425}
   m_Layer: 0
   m_Name: Tile24
@@ -4913,18 +4934,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &741856423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741856420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &741856424
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4995,7 +5004,6 @@ GameObject:
   - component: {fileID: 785878549}
   - component: {fileID: 785878550}
   - component: {fileID: 785878552}
-  - component: {fileID: 785878551}
   - component: {fileID: 785878553}
   m_Layer: 0
   m_Name: Tile48
@@ -5073,18 +5081,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &785878551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 785878548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &785878552
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5150,15 +5146,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1489736382}
+    m_TransformParent: {fileID: 1893921335}
     m_Modifications:
     - target: {fileID: 101600949382070867, guid: 1a179eb5ad63050418f24abd22dc193e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 101600949382070867, guid: 1a179eb5ad63050418f24abd22dc193e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.75
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 101600949382070867, guid: 1a179eb5ad63050418f24abd22dc193e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5258,6 +5254,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateVertical
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5279,7 +5287,6 @@ GameObject:
   - component: {fileID: 825865249}
   - component: {fileID: 825865250}
   - component: {fileID: 825865252}
-  - component: {fileID: 825865251}
   - component: {fileID: 825865253}
   m_Layer: 0
   m_Name: Tile22
@@ -5356,18 +5363,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &825865251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825865248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &825865252
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5537,6 +5532,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
     - target: {fileID: 7504969002483511268, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_Name
       value: GateHorizontal
@@ -5598,6 +5601,14 @@ PrefabInstance:
     - target: {fileID: 101600949382070867, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
       objectReference: {fileID: 0}
     - target: {fileID: 7504969002483511268, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_Name
@@ -5857,9 +5868,7 @@ GameObject:
   - component: {fileID: 1046962609}
   - component: {fileID: 1046962610}
   - component: {fileID: 1046962612}
-  - component: {fileID: 1046962611}
   - component: {fileID: 1046962614}
-  - component: {fileID: 1046962613}
   - component: {fileID: 1046962615}
   m_Layer: 0
   m_Name: Tile1
@@ -5937,18 +5946,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1046962611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1046962608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1046962612
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5994,18 +5991,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1046962613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1046962608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1046962614
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6113,6 +6098,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
     - target: {fileID: 7504969002483511268, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_Name
       value: GateHorizontal
@@ -6179,6 +6172,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateRight
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6240,6 +6245,18 @@ PrefabInstance:
     - target: {fileID: 6466742813546983995, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
       propertyPath: m_Name
       value: GateRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6303,6 +6320,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateVertical
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6323,11 +6352,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 101600949382070867, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 101600949382070867, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.45000005
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 101600949382070867, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6360,6 +6389,14 @@ PrefabInstance:
     - target: {fileID: 101600949382070867, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
       objectReference: {fileID: 0}
     - target: {fileID: 7504969002483511268, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_Name
@@ -6427,6 +6464,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateVertical
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6448,7 +6497,6 @@ GameObject:
   - component: {fileID: 1227603498}
   - component: {fileID: 1227603499}
   - component: {fileID: 1227603501}
-  - component: {fileID: 1227603500}
   - component: {fileID: 1227603502}
   m_Layer: 0
   m_Name: Tile37
@@ -6525,18 +6573,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1227603500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1227603497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1227603501
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6607,7 +6643,6 @@ GameObject:
   - component: {fileID: 1257987964}
   - component: {fileID: 1257987965}
   - component: {fileID: 1257987967}
-  - component: {fileID: 1257987966}
   - component: {fileID: 1257987968}
   m_Layer: 0
   m_Name: Tile36
@@ -6684,18 +6719,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1257987966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1257987963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1257987967
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6766,7 +6789,6 @@ GameObject:
   - component: {fileID: 1300876125}
   - component: {fileID: 1300876126}
   - component: {fileID: 1300876128}
-  - component: {fileID: 1300876127}
   - component: {fileID: 1300876129}
   m_Layer: 0
   m_Name: Tile40
@@ -6843,18 +6865,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1300876127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1300876124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1300876128
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6962,6 +6972,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
     - target: {fileID: 7504969002483511268, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_Name
       value: GateHorizontal
@@ -6987,7 +7005,6 @@ GameObject:
   - component: {fileID: 1317028360}
   - component: {fileID: 1317028361}
   - component: {fileID: 1317028363}
-  - component: {fileID: 1317028362}
   - component: {fileID: 1317028364}
   m_Layer: 0
   m_Name: Tile28
@@ -7064,18 +7081,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1317028362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1317028359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1317028363
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7187,6 +7192,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateVertical
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7292,7 +7309,6 @@ GameObject:
   - component: {fileID: 1406736550}
   - component: {fileID: 1406736551}
   - component: {fileID: 1406736553}
-  - component: {fileID: 1406736552}
   - component: {fileID: 1406736554}
   m_Layer: 0
   m_Name: Tile38
@@ -7370,18 +7386,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1406736552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1406736549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1406736553
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7452,7 +7456,6 @@ GameObject:
   - component: {fileID: 1410281144}
   - component: {fileID: 1410281145}
   - component: {fileID: 1410281147}
-  - component: {fileID: 1410281146}
   - component: {fileID: 1410281148}
   m_Layer: 0
   m_Name: Tile39
@@ -7529,18 +7532,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1410281146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410281143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1410281147
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7652,6 +7643,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateRight
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7673,7 +7676,6 @@ GameObject:
   - component: {fileID: 1472483558}
   - component: {fileID: 1472483559}
   - component: {fileID: 1472483561}
-  - component: {fileID: 1472483560}
   - component: {fileID: 1472483562}
   m_Layer: 0
   m_Name: Tile14
@@ -7750,18 +7752,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1472483560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472483557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1472483561
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7832,7 +7822,6 @@ GameObject:
   - component: {fileID: 1489736382}
   - component: {fileID: 1489736383}
   - component: {fileID: 1489736385}
-  - component: {fileID: 1489736384}
   - component: {fileID: 1489736386}
   m_Layer: 0
   m_Name: Tile9
@@ -7854,7 +7843,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 810561413}
+  - {fileID: 1683503547}
   m_Father: {fileID: 57664982}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1489736383
@@ -7909,18 +7898,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1489736384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1489736381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1489736385
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7991,7 +7968,6 @@ GameObject:
   - component: {fileID: 1515423697}
   - component: {fileID: 1515423698}
   - component: {fileID: 1515423700}
-  - component: {fileID: 1515423699}
   - component: {fileID: 1515423701}
   m_Layer: 0
   m_Name: Tile30
@@ -8068,18 +8044,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1515423699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1515423696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1515423700
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8249,6 +8213,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
     - target: {fileID: 7504969002483511268, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_Name
       value: GateBottom
@@ -8315,6 +8287,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateVertical
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8336,7 +8320,6 @@ GameObject:
   - component: {fileID: 1617638101}
   - component: {fileID: 1617638102}
   - component: {fileID: 1617638104}
-  - component: {fileID: 1617638103}
   - component: {fileID: 1617638105}
   m_Layer: 0
   m_Name: Tile25
@@ -8416,18 +8399,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1617638103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1617638100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1617638104
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8498,7 +8469,6 @@ GameObject:
   - component: {fileID: 1631434937}
   - component: {fileID: 1631434938}
   - component: {fileID: 1631434940}
-  - component: {fileID: 1631434939}
   - component: {fileID: 1631434941}
   m_Layer: 0
   m_Name: Tile15
@@ -8576,18 +8546,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1631434939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631434936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1631434940
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8658,7 +8616,6 @@ GameObject:
   - component: {fileID: 1658424127}
   - component: {fileID: 1658424128}
   - component: {fileID: 1658424130}
-  - component: {fileID: 1658424129}
   - component: {fileID: 1658424131}
   m_Layer: 0
   m_Name: Tile8
@@ -8736,18 +8693,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1658424129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658424126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1658424130
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8813,11 +8758,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 180060388}
+    m_TransformParent: {fileID: 1489736382}
     m_Modifications:
     - target: {fileID: 101600949382070867, guid: 1a179eb5ad63050418f24abd22dc193e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 101600949382070867, guid: 1a179eb5ad63050418f24abd22dc193e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8880,7 +8825,6 @@ GameObject:
   - component: {fileID: 1731936351}
   - component: {fileID: 1731936352}
   - component: {fileID: 1731936354}
-  - component: {fileID: 1731936353}
   - component: {fileID: 1731936355}
   m_Layer: 0
   m_Name: Tile44
@@ -8958,18 +8902,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1731936353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1731936350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1731936354
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9081,6 +9013,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateRight
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9102,7 +9046,6 @@ GameObject:
   - component: {fileID: 1739368966}
   - component: {fileID: 1739368967}
   - component: {fileID: 1739368969}
-  - component: {fileID: 1739368968}
   - component: {fileID: 1739368970}
   m_Layer: 0
   m_Name: Tile35
@@ -9120,13 +9063,13 @@ Transform:
   m_GameObject: {fileID: 1739368965}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.25, y: 0, z: 0}
+  m_LocalPosition: {x: 3.75, y: -1.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1901274464}
   - {fileID: 64995216}
-  m_Father: {fileID: 2091620966}
+  m_Father: {fileID: 57664982}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1739368967
 SpriteRenderer:
@@ -9180,18 +9123,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1739368968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739368965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1739368969
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9262,7 +9193,6 @@ GameObject:
   - component: {fileID: 1739686708}
   - component: {fileID: 1739686709}
   - component: {fileID: 1739686711}
-  - component: {fileID: 1739686710}
   - component: {fileID: 1739686712}
   m_Layer: 0
   m_Name: Tile19
@@ -9339,18 +9269,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1739686710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739686707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1739686711
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9458,6 +9376,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
     - target: {fileID: 7504969002483511268, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_Name
       value: GateHorizontal
@@ -9520,6 +9446,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
     - target: {fileID: 7504969002483511268, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_Name
       value: GateBottom
@@ -9545,7 +9479,6 @@ GameObject:
   - component: {fileID: 1759881520}
   - component: {fileID: 1759881521}
   - component: {fileID: 1759881523}
-  - component: {fileID: 1759881522}
   - component: {fileID: 1759881524}
   m_Layer: 0
   m_Name: Tile33
@@ -9622,18 +9555,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1759881522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1759881519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1759881523
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9745,6 +9666,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateVertical
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9806,6 +9739,18 @@ PrefabInstance:
     - target: {fileID: 6466742813546983995, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
       propertyPath: m_Name
       value: GateVertical
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9931,6 +9876,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateRight
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9988,6 +9945,14 @@ PrefabInstance:
     - target: {fileID: 101600949382070867, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
       objectReference: {fileID: 0}
     - target: {fileID: 7504969002483511268, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_Name
@@ -10076,7 +10041,6 @@ GameObject:
   - component: {fileID: 1801988004}
   - component: {fileID: 1801988005}
   - component: {fileID: 1801988007}
-  - component: {fileID: 1801988006}
   - component: {fileID: 1801988008}
   m_Layer: 0
   m_Name: Tile3
@@ -10153,18 +10117,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1801988006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801988003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1801988007
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10235,7 +10187,6 @@ GameObject:
   - component: {fileID: 1849270372}
   - component: {fileID: 1849270373}
   - component: {fileID: 1849270375}
-  - component: {fileID: 1849270374}
   - component: {fileID: 1849270376}
   m_Layer: 0
   m_Name: Tile27
@@ -10312,18 +10263,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1849270374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1849270371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1849270375
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10394,7 +10333,6 @@ GameObject:
   - component: {fileID: 1888308388}
   - component: {fileID: 1888308389}
   - component: {fileID: 1888308391}
-  - component: {fileID: 1888308390}
   - component: {fileID: 1888308392}
   m_Layer: 0
   m_Name: Tile41
@@ -10472,18 +10410,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1888308390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1888308387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1888308391
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10554,7 +10480,6 @@ GameObject:
   - component: {fileID: 1893921335}
   - component: {fileID: 1893921336}
   - component: {fileID: 1893921338}
-  - component: {fileID: 1893921337}
   - component: {fileID: 1893921339}
   m_Layer: 0
   m_Name: Tile7
@@ -10576,6 +10501,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 810561413}
   - {fileID: 414968520}
   m_Father: {fileID: 57664982}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10631,18 +10557,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1893921337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1893921334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1893921338
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10750,6 +10664,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
     - target: {fileID: 7504969002483511268, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_Name
       value: GateHorizontal
@@ -10815,6 +10737,18 @@ PrefabInstance:
     - target: {fileID: 6466742813546983995, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
       propertyPath: m_Name
       value: GateVertical
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
       propertyPath: m_SortingOrder
@@ -10903,7 +10837,6 @@ GameObject:
   - component: {fileID: 1941872127}
   - component: {fileID: 1941872128}
   - component: {fileID: 1941872130}
-  - component: {fileID: 1941872129}
   - component: {fileID: 1941872131}
   m_Layer: 0
   m_Name: Tile42
@@ -10980,18 +10913,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1941872129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941872126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1941872130
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11062,7 +10983,6 @@ GameObject:
   - component: {fileID: 1945709105}
   - component: {fileID: 1945709106}
   - component: {fileID: 1945709108}
-  - component: {fileID: 1945709107}
   - component: {fileID: 1945709109}
   m_Layer: 0
   m_Name: Tile12
@@ -11140,18 +11060,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1945709107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1945709104}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1945709108
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11222,7 +11130,6 @@ GameObject:
   - component: {fileID: 1952839904}
   - component: {fileID: 1952839905}
   - component: {fileID: 1952839907}
-  - component: {fileID: 1952839906}
   - component: {fileID: 1952839908}
   m_Layer: 0
   m_Name: Tile46
@@ -11299,18 +11206,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1952839906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1952839903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1952839907
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11381,7 +11276,6 @@ GameObject:
   - component: {fileID: 1963902918}
   - component: {fileID: 1963902919}
   - component: {fileID: 1963902921}
-  - component: {fileID: 1963902920}
   - component: {fileID: 1963902922}
   m_Layer: 0
   m_Name: Tile45
@@ -11459,18 +11353,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1963902920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963902917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1963902921
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11582,6 +11464,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateVertical
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11640,6 +11534,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
     - target: {fileID: 7504969002483511268, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_Name
       value: GateBottom
@@ -11696,7 +11598,6 @@ GameObject:
   - component: {fileID: 2029331408}
   - component: {fileID: 2029331409}
   - component: {fileID: 2029331411}
-  - component: {fileID: 2029331410}
   - component: {fileID: 2029331412}
   m_Layer: 0
   m_Name: Tile32
@@ -11773,18 +11674,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2029331410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2029331407}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2029331411
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11895,6 +11784,18 @@ PrefabInstance:
     - target: {fileID: 6466742813546983995, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
       propertyPath: m_Name
       value: GateRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 587373024a74b1345ab54a2a797a098a, type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12041,7 +11942,6 @@ GameObject:
   - component: {fileID: 2055950935}
   - component: {fileID: 2055950936}
   - component: {fileID: 2055950938}
-  - component: {fileID: 2055950937}
   - component: {fileID: 2055950939}
   m_Layer: 0
   m_Name: Tile31
@@ -12118,18 +12018,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2055950937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2055950934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2055950938
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12241,6 +12129,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateVertical
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12262,7 +12162,6 @@ GameObject:
   - component: {fileID: 2091620966}
   - component: {fileID: 2091620967}
   - component: {fileID: 2091620969}
-  - component: {fileID: 2091620968}
   - component: {fileID: 2091620970}
   m_Layer: 0
   m_Name: Tile34
@@ -12285,7 +12184,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1941396239}
-  - {fileID: 1739368966}
   m_Father: {fileID: 57664982}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2091620967
@@ -12340,18 +12238,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2091620968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2091620965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2091620969
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12422,7 +12308,6 @@ GameObject:
   - component: {fileID: 2099540672}
   - component: {fileID: 2099540673}
   - component: {fileID: 2099540675}
-  - component: {fileID: 2099540674}
   - component: {fileID: 2099540676}
   m_Layer: 0
   m_Name: Tile17
@@ -12499,18 +12384,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2099540674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2099540671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2099540675
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12622,6 +12495,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateVertical
       objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482683582434501945, guid: 71de5af016b36ac4fb6088abeecc761e, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12680,6 +12565,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.38431376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2322096647572177589, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.050980397
+      objectReference: {fileID: 0}
     - target: {fileID: 7504969002483511268, guid: 04b00c19e3db8494daa1e6c1e89f9eb3, type: 3}
       propertyPath: m_Name
       value: GateHorizontal
@@ -12705,7 +12598,6 @@ GameObject:
   - component: {fileID: 2139989136}
   - component: {fileID: 2139989137}
   - component: {fileID: 2139989139}
-  - component: {fileID: 2139989138}
   - component: {fileID: 2139989140}
   m_Layer: 0
   m_Name: Tile11
@@ -12782,18 +12674,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2139989138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2139989135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777af97955b0e574380e504b3f6279c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2139989139
 BoxCollider2D:
   m_ObjectHideFlags: 0
