@@ -1,9 +1,9 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class List1 : MonoBehaviour
 {
-    public float timer = 10f;
     public List<string> tiles = new List<string>();
     public List<GameObject> tileObjects = new List<GameObject>();
 
@@ -28,26 +28,41 @@ public class List1 : MonoBehaviour
         if (tiles.Count == 0)
         {
             Debug.LogWarning("The list of tiles is empty. Please assign strings.");
+            return;
         }
 
         AssignTileObjects();
 
-        // Destroy multiple blocks at once
-        DestroyTiles(new List<string> { "Tile1", "Tile2", "Tile3" });
+        StartCoroutine(DestroyTilesSequence());
+    }
+
+    IEnumerator DestroyTilesSequence()
+    {
+        // Wait for 5 seconds before destroying the first set of tiles
+        yield return new WaitForSeconds(5f);
+        DestroyTiles(new List<string> { "Tile1", "Tile2", "Tile3", "Tile4","Tile5", "Tile6", "Tile7", "Tile8", "Tile14", "Tile15", "Tile21", "Tile22", "Tile28", "Tile29", "Tile", "Tile35", "Tile36", "Tile42", "Tile43", "Tile44", "Tile45", "Tile46", "Tile47", "Tile48", "Tile49" });
+
+        // Wait for 3 seconds before destroying the second set of tiles
+        yield return new WaitForSeconds(3f);
+        DestroyTiles(new List<string> { "Tile9", "Tile10", "Tile11", "Tile12", "Tile13", "Tile16","Tile20", "Tile23", "Tile26" ,"Tile27","Tile30", "Tile34", "Tile37","Tile38","Tile39", "Tile40","Tile41" });
+
+        // Add another set of tiles to destroy after 3 seconds
+        yield return new WaitForSeconds(3f);
+        DestroyTiles(new List<string> { "Tile17", "Tile18", "Tile19" ,"Tile24" ,"Tile27","Tile31","Tile32","Tile33" });
+
+        // Add more sets of tiles to destroy as needed
     }
 
     GameObject GetGameObjectByString(string tileName)
     {
-        GameObject foundObject = null;
         foreach (GameObject obj in tileObjects)
         {
-            if (obj.name == tileName)
+            if (obj != null && obj.name == tileName)
             {
-                foundObject = obj;
-                break;
+                return obj;
             }
         }
-        return foundObject;
+        return null;
     }
 
     void DestroyTile(string tileName)
@@ -60,7 +75,7 @@ public class List1 : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Tile " + tileName + " not found.");
+            Debug.LogWarning("Tile " + tileName + " not found or is already destroyed.");
         }
     }
 
@@ -77,5 +92,8 @@ public class List1 : MonoBehaviour
 
     }
 }
+
+
+
 
 
