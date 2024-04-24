@@ -7,7 +7,7 @@ public class List1 : MonoBehaviour
     public List<string> tiles = new List<string>();
     public List<GameObject> tileObjects = new List<GameObject>();
 
-    void AssignTileObjects()
+    void AssignTileObjects() //for loop to list all tiles and assign names to them
     {
         for (int i = 0; i < tiles.Count; i++)
         {
@@ -17,7 +17,7 @@ public class List1 : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("Not enough GameObjects in tileObjects list.");
+                Debug.LogWarning("tiles not found");
                 break;
             }
         }
@@ -27,34 +27,34 @@ public class List1 : MonoBehaviour
     {
         if (tiles.Count == 0)
         {
-            Debug.LogWarning("The list of tiles is empty. Please assign strings.");
+            Debug.LogWarning("strings not assigned");
             return;
         }
 
         AssignTileObjects();
 
-        StartCoroutine(DestroyTilesSequence());
+        StartCoroutine(DestroyTilesSequence()); //coroutine instead of timer
     }
 
-    IEnumerator DestroyTilesSequence()
-    {
-        // Wait for 5 seconds before destroying the first set of tiles
+    IEnumerator DestroyTilesSequence() //Function to destry tiles in a sequence
+    {                                  //provides methods to change and effect collections, it was easier to apply that a time was
+        //yes there is a better way to do this code (;-;)
         yield return new WaitForSeconds(5f);
         DestroyTiles(new List<string> { "Tile1", "Tile2", "Tile3", "Tile4","Tile5", "Tile6", "Tile7", "Tile8", "Tile14", "Tile15", "Tile21", "Tile22", "Tile28", "Tile29", "Tile", "Tile35", "Tile36", "Tile42", "Tile43", "Tile44", "Tile45", "Tile46", "Tile47", "Tile48", "Tile49" });
 
-        // Wait for 3 seconds before destroying the second set of tiles
+       
         yield return new WaitForSeconds(3f);
-        DestroyTiles(new List<string> { "Tile9", "Tile10", "Tile11", "Tile12", "Tile13", "Tile16","Tile20", "Tile23", "Tile26" ,"Tile27","Tile30", "Tile34", "Tile37","Tile38","Tile39", "Tile40","Tile41" });
+        DestroyTiles(new List<string> { "Tile9", "Tile10", "Tile11", "Tile12", "Tile13", "Tile16","Tile20", "Tile23","Tile27","Tile30", "Tile34", "Tile37","Tile38","Tile39", "Tile40","Tile41" });
 
-        // Add another set of tiles to destroy after 3 seconds
+        
         yield return new WaitForSeconds(3f);
-        DestroyTiles(new List<string> { "Tile17", "Tile18", "Tile19" ,"Tile24" ,"Tile27","Tile31","Tile32","Tile33" });
+        DestroyTiles(new List<string> { "Tile17", "Tile18", "Tile19" ,"Tile24" , "Tile26" ,"Tile27","Tile31","Tile32","Tile33" });
 
-        // Add more sets of tiles to destroy as needed
+       
     }
 
-    GameObject GetGameObjectByString(string tileName)
-    {
+    GameObject GetGameObjectByString(string tileName) //gets gameobject by string
+    {                                                 // getsobject by string used 
         foreach (GameObject obj in tileObjects)
         {
             if (obj != null && obj.name == tileName)
@@ -65,8 +65,8 @@ public class List1 : MonoBehaviour
         return null;
     }
 
-    void DestroyTile(string tileName)
-    {
+    void DestroyTile(string tileName) //destroys tiles by name
+    {                                 // destroy function that works based on tile name
         GameObject tileObject = GetGameObjectByString(tileName);
         if (tileObject != null)
         {
