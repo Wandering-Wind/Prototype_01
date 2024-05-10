@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Gates : MonoBehaviour
 {
     private Collider2D myCollider;
@@ -9,8 +10,14 @@ public class Gates : MonoBehaviour
     Movement Movement;
     void Start()
     {
+
+        
+       // Movement.enabled = false;  THIS LINE FOR SOME REASON GIVES AN ERROR
+
+
         
         Movement.enabled = false;
+
         // Get the collider component of this gate
         myCollider = GetComponent<Collider2D>();
     }
