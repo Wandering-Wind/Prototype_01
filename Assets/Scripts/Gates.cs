@@ -2,12 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Gates : MonoBehaviour
 {
     private Collider2D myCollider;
 
     void Start()
     {
+<<<<<<< Updated upstream
+=======
+        
+       // Movement.enabled = false;  THIS LINE FOR SOME REASON GIVES AN ERROR
+>>>>>>> Stashed changes
         // Get the collider component of this gate
         myCollider = GetComponent<Collider2D>();
     }
