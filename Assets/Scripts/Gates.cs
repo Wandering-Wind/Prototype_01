@@ -6,14 +6,18 @@ using UnityEngine;
 public class Gates : MonoBehaviour
 {
     private Collider2D myCollider;
-
+    [SerializeField]
+    Movement Movement;
     void Start()
     {
-<<<<<<< Updated upstream
-=======
+
         
        // Movement.enabled = false;  THIS LINE FOR SOME REASON GIVES AN ERROR
->>>>>>> Stashed changes
+
+
+        
+        Movement.enabled = false;
+
         // Get the collider component of this gate
         myCollider = GetComponent<Collider2D>();
     }
@@ -27,6 +31,7 @@ public class Gates : MonoBehaviour
             // Disable the collider of both gates
             myCollider.enabled = false;
             other.GetComponent<Collider2D>().enabled = false;
+            Movement.enabled = true;
             Debug.Log("Gate works");
         }
     }
