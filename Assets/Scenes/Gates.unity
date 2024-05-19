@@ -426,6 +426,7 @@ Transform:
   - {fileID: 2029331408}
   - {fileID: 1759881520}
   - {fileID: 2091620966}
+  - {fileID: 1739368966}
   - {fileID: 1257987964}
   - {fileID: 1227603498}
   - {fileID: 1406736550}
@@ -454,7 +455,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b9b8d1e6b63f7848a5b5430b8462ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 10
   tiles:
   - Tile1
   - Tile2
@@ -5675,7 +5675,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b9b8d1e6b63f7848a5b5430b8462ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 10
   tiles:
   - 1
   - 2
@@ -9031,13 +9030,13 @@ Transform:
   m_GameObject: {fileID: 1739368965}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.25, y: 0, z: 0}
+  m_LocalPosition: {x: 3.75, y: -1.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1901274464}
   - {fileID: 64995216}
-  m_Father: {fileID: 2091620966}
+  m_Father: {fileID: 57664982}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1739368967
 SpriteRenderer:
@@ -12210,7 +12209,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1941396239}
-  - {fileID: 1739368966}
   m_Father: {fileID: 57664982}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2091620967
