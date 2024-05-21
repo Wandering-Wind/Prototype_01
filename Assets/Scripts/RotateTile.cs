@@ -1,48 +1,78 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    private float rotZ;
     public float rotationSpeed;
     public bool ClockwiseRotation;
+    
+    private TurnManager turnManager;
 
-    // Start is called before the first frame update
+    
+    
+
     void Start()
     {
-        //this code just constantly rotates tiles at the moment
-        // we would have to change it so that when the gates line up
-        // then only the rotation happen to align the gates
-        //rotation should be worked on after we do the gates thing
+        turnManager = FindObjectOfType<TurnManager>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //This is code for continuous rotation
-        //if (ClockwiseRotation == false)
-        //{
-        //    rotZ = Time.deltaTime * rotationSpeed;
-        //}
-        //else
-        //{
-        //    rotZ += -Time.deltaTime * rotationSpeed;
-        //}
 
-        //transform.rotation = Quaternion.Euler(0,0,rotZ);
+        IsActivePlayer();
+        // Continuous rotation logic can be enabled if required
+        // if (ClockwiseRotation == false)
+        // {
+        //     rotZ = Time.deltaTime * rotationSpeed;
+        // }
+        // else
+        // {
+        //     rotZ += -Time.deltaTime * rotationSpeed;
+        // }
+        // transform.rotation = Quaternion.Euler(0, 0, rotZ);
     }
 
     private void OnMouseDown()
     {
-        Debug.Log("rotates");
+        // Only allow rotation if the current player is active
+        if (turnManager != null && turnManager.isPlayer1Turn)
+        {
+            Debug.Log("rotates");
+            RotateTile();
+
+            // Notify the TurnManager that a rotation has been made
+            turnManager.RegisterMove();
+        }
+        else if (turnManager != null && turnManager.isPlayer2Turn)
+        {
+            Debug.Log("Rotates for Player2");
+            RotateTile();
+            turnManager.RegisterMove();
+        }
+    }
+
+    public void RotateTile()
+    {
         transform.Rotate(0, 0, -90);
     }
+
+    private bool IsActivePlayer()
+    {
+        Movement activePlayer = turnManager.isPlayer1Turn ? turnManager.player1 : turnManager.player2;
+        return transform.IsChildOf(activePlayer.transform) || transform == activePlayer.transform;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             collision.transform.SetParent(transform, true);
         }
     }
-}
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        
+            collision.transform.SetParent(null, false);
+        }
+    }

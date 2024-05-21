@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Player2Script : MonoBehaviour
+public class Player1Script : MonoBehaviour
 {
     private TurnManager turnManager;
     private NewBehaviourScript tileScript;
@@ -13,9 +13,9 @@ public class Player2Script : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (turnManager != null && !turnManager.isPlayer1Turn)
+        if (turnManager != null && turnManager.isPlayer1Turn)
         {
-            Debug.Log("Player 2 rotates");
+            Debug.Log("Player 1 rotates");
             tileScript.RotateTile();
             turnManager.RegisterMove();
         }

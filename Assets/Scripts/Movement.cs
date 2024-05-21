@@ -4,33 +4,35 @@ public class Movement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     private bool canMove = true;
-    private float movementCooldown = 2f; // Cooldown duration for movement
-    private float cooldownTimer = 0f; // Timer for movement cooldown
-    private bool isDoubleMove = false; // Flag to track if player's movement distance is doubled
+    private float movementCooldown = 2f;
+    private float cooldownTimer = 0f;
+    private bool isDoubleMove = false;
 
-    // Tile-based movement parameters
     public float tileSize = 1.25f;
     private Vector3 targetPosition;
+
+    private TurnManager turnManager;
 
     void Start()
     {
         targetPosition = transform.position;
+        turnManager = FindObjectOfType<TurnManager>();
     }
 
     void Update()
     {
-        // Update cooldown timer
+        // Ensure we only process movement if this player is active
+        if (!enabled) return;
+
         if (!canMove)
         {
             cooldownTimer -= Time.deltaTime;
-
             if (cooldownTimer <= 0f)
             {
                 canMove = true;
             }
         }
 
-        // Tile-based movement
         if (canMove)
         {
             if (Input.GetKeyDown(KeyCode.UpArrow))
@@ -47,7 +49,7 @@ public class Movement : MonoBehaviour
     public void StopMovement(float duration)
     {
         canMove = false;
-        cooldownTimer = duration; // Set cooldown timer
+        cooldownTimer = duration;
     }
 
     public void SetDoubleMove(bool isDouble)
@@ -57,21 +59,23 @@ public class Movement : MonoBehaviour
 
     private void MovePlayer(Vector3 direction)
     {
-        // Check if movement input is detected and movement is not on cooldown
         if (canMove)
         {
-            // Calculate the movement distance based on whether the player's movement is doubled
             float distance = isDoubleMove ? tileSize * 2f : tileSize;
             targetPosition += direction * distance;
-            canMove = false; // Disable movement until cooldown is over
-            StopMovement(movementCooldown); // Start cooldown
+            canMove = false;
+            StopMovement(movementCooldown);
+
+            // Notify the TurnManager that a move has been made
+            if (turnManager != null)
+            {
+                turnManager.RegisterMove();
+            }
         }
     }
 
     void LateUpdate()
     {
-        // Smoothly move the player towards the target position
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
     }
-
 }
