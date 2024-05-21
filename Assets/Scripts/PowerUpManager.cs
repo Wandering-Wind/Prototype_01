@@ -10,8 +10,10 @@ public class PowerUpManager : MonoBehaviour
     private List<GameObject> activePowerUps = new List<GameObject>(); // List to track active power-ups
 
     public List1 list1; // Reference to the List1 script
+    public bool SpawnPowerUpBool = true;
 
-    void Start()
+
+    public void Start()
     {
         if (list1 == null)
         {
@@ -25,14 +27,21 @@ public class PowerUpManager : MonoBehaviour
     {
         while (true)
         {
+            
             yield return new WaitForSeconds(spawnInterval);
 
             if (activePowerUps.Count < maxPowerUps)
             {
                 SpawnPowerUp();
             }
+            else
+            {
+                 yield return new WaitForSeconds(1000f); 
+                   
+            }
         }
     }
+
 
     void SpawnPowerUp()
     {

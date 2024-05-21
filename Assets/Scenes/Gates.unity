@@ -286,9 +286,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpPrefab: {fileID: 1790234807}
-  spawnInterval: 10
+  spawnInterval: 5
   maxPowerUps: 3
-  list1: {fileID: 57664984}
+  list1: {fileID: 0}
+  SpawnPowerUpBool: 1
 --- !u!114 &57664984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2663,6 +2664,7 @@ MonoBehaviour:
   spawnInterval: 10
   maxPowerUps: 3
   list1: {fileID: 0}
+  SpawnPowerUpBool: 1
 --- !u!114 &1028882265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3549,7 +3551,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -4137,8 +4139,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerUpPrefab: {fileID: 1790234807}
   spawnInterval: 10
-  maxPowerUps: 3
+  maxPowerUps: 5
   list1: {fileID: 57664984}
+  SpawnPowerUpBool: 1
 --- !u!212 &1790234809
 SpriteRenderer:
   m_ObjectHideFlags: 0
