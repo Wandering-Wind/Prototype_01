@@ -11,6 +11,7 @@ TagManager:
   - TriggerGateEmpty
   - Player1
   - Player2
+  - PowerUp
   layers:
   - Default
   - TransparentFX

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Movement : MonoBehaviour
 {
@@ -12,16 +13,25 @@ public class Movement : MonoBehaviour
     private Vector3 targetPosition;
 
     private TurnManager turnManager;
+    private PowerUpManager powerUpManager;
+
+    public GameObject extraMoveIndicator; // Reference to the extra move indicator UI element
+    public float indicatorDisplayTime = 2f; // Time to display the indicator
 
     void Start()
     {
         targetPosition = transform.position;
         turnManager = FindObjectOfType<TurnManager>();
+        powerUpManager = FindObjectOfType<PowerUpManager>();
+
+        if (extraMoveIndicator != null)
+        {
+            extraMoveIndicator.SetActive(false); // Ensure the indicator is hidden at the start
+        }
     }
 
     void Update()
     {
-        // Ensure we only process movement if this player is active
         if (!enabled) return;
 
         if (!canMove)
@@ -35,14 +45,67 @@ public class Movement : MonoBehaviour
 
         if (canMove)
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow))
-                MovePlayer(Vector3.up);
-            else if (Input.GetKeyDown(KeyCode.DownArrow))
-                MovePlayer(Vector3.down);
-            else if (Input.GetKeyDown(KeyCode.LeftArrow))
-                MovePlayer(Vector3.left);
-            else if (Input.GetKeyDown(KeyCode.RightArrow))
-                MovePlayer(Vector3.right);
+            if (Input.GetKeyDown(KeyCode.UpArrow)) MovePlayer(Vector3.up);
+            else if (Input.GetKeyDown(KeyCode.DownArrow)) MovePlayer(Vector3.down);
+            else if (Input.GetKeyDown(KeyCode.LeftArrow)) MovePlayer(Vector3.left);
+            else if (Input.GetKeyDown(KeyCode.RightArrow)) MovePlayer(Vector3.right);
+        }
+    }
+
+    private void MovePlayer(Vector3 direction)
+    {
+        if (canMove)
+        {
+            float distance = isDoubleMove ? tileSize * 2f : tileSize;
+            targetPosition += direction * distance;
+            canMove = false;
+            StopMovement(movementCooldown);
+
+            if (turnManager != null)
+            {
+                turnManager.RegisterMove();
+            }
+        }
+    }
+
+    void LateUpdate()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PowerUp"))
+        {
+            if (powerUpManager != null)
+            {
+                powerUpManager.RemovePowerUp(collision.gameObject); // Remove the power-up from the active list
+            }
+
+            Destroy(collision.gameObject);
+            Debug.Log("Power-up collected! Extra move granted.");
+            ShowExtraMoveIndicator(); // Display the indicator
+            if (turnManager != null)
+            {
+                turnManager.AddExtraMove(); // Grant an extra move
+            }
+        }
+    }
+
+    private void ShowExtraMoveIndicator()
+    {
+        if (extraMoveIndicator != null)
+        {
+            extraMoveIndicator.SetActive(true);
+            Invoke("HideExtraMoveIndicator", indicatorDisplayTime);
+        }
+    }
+
+    private void HideExtraMoveIndicator()
+    {
+        if (extraMoveIndicator != null)
+        {
+            extraMoveIndicator.SetActive(false);
         }
     }
 
@@ -55,27 +118,5 @@ public class Movement : MonoBehaviour
     public void SetDoubleMove(bool isDouble)
     {
         isDoubleMove = isDouble;
-    }
-
-    private void MovePlayer(Vector3 direction)
-    {
-        if (canMove)
-        {
-            float distance = isDoubleMove ? tileSize * 2f : tileSize;
-            targetPosition += direction * distance;
-            canMove = false;
-            StopMovement(movementCooldown);
-
-            // Notify the TurnManager that a move has been made
-            if (turnManager != null)
-            {
-                turnManager.RegisterMove();
-            }
-        }
-    }
-
-    void LateUpdate()
-    {
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
     }
 }
