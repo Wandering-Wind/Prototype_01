@@ -7,6 +7,8 @@ TagManager:
   - tiles
   - Trap
   - Gate
+  - TriggerEmpty
+  - TriggerGateEmpty
   layers:
   - Default
   - TransparentFX

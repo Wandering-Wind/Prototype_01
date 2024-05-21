@@ -35,7 +35,7 @@ public class NewBehaviourScript : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("clicks");
+        Debug.Log("rotates");
         transform.Rotate(0, 0, -90);
     }
     private void OnTriggerEnter2D(Collider2D collision)

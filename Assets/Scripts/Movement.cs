@@ -73,4 +73,5 @@ public class Movement : MonoBehaviour
         // Smoothly move the player towards the target position
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
     }
+
 }
