@@ -580,7 +580,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: f86ed817e74de4442abad229ce6da449, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1862,10 +1862,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile25
       objectReference: {fileID: 0}
-    - target: {fileID: 705641981380477654, guid: 975733abec8ee6c4db25d3e660cc3fe4, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 42135ba005362f44985158a8b6f70d61, type: 3}
     - target: {fileID: 8118726483044506060, guid: 975733abec8ee6c4db25d3e660cc3fe4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2987,7 +2983,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.761, g: 0.65028715, b: 0.53193897, a: 1}
   m_FlipX: 0
@@ -3680,6 +3676,14 @@ PrefabInstance:
     - target: {fileID: 110148279472105029, guid: 975733abec8ee6c4db25d3e660cc3fe4, type: 3}
       propertyPath: m_Name
       value: Tile48
+      objectReference: {fileID: 0}
+    - target: {fileID: 1070520704780615394, guid: 975733abec8ee6c4db25d3e660cc3fe4, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.4199625
+      objectReference: {fileID: 0}
+    - target: {fileID: 1070520704780615394, guid: 975733abec8ee6c4db25d3e660cc3fe4, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.6857143
       objectReference: {fileID: 0}
     - target: {fileID: 6422021062347995536, guid: 975733abec8ee6c4db25d3e660cc3fe4, type: 3}
       propertyPath: m_Sprite
