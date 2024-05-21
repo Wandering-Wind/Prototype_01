@@ -11,7 +11,7 @@ public class Player2Script : MonoBehaviour
         tileScript = FindObjectOfType<NewBehaviourScript>();
     }
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         if (turnManager != null && !turnManager.isPlayer1Turn)
         {
