@@ -8,13 +8,19 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/IntroScene.unity
     guid: a7795bbb780e2bf408ddfc6a747ba66d
+<<<<<<< Updated upstream
   - enabled: 0
     path: Assets/Scenes/Gates Dupe.unity
     guid: f596a9ccbc8c8634ea385d912a954ccb
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: a6a404bd51292ca42a2be2adeb346bbe
+=======
+  - enabled: 1
+    path: Assets/Scenes/Gates.unity
+    guid: 6f7a2091a5646744fb621b64e4aa73ed
+>>>>>>> Stashed changes
   m_configObjects: {}
