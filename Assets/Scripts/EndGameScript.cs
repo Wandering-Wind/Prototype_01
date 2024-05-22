@@ -27,12 +27,12 @@ public class EndGameScript : MonoBehaviour
         }
     }
 
-    void RestartGame()
+    public void RestartGame()
     {
         SceneManager.LoadScene("IntroScene"); // Load the intro scene
     }
 
-    void ExitGame()
+    public void ExitGame()
     {
         Application.Quit();
     }
