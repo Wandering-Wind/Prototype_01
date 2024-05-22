@@ -6,11 +6,11 @@ public class PowerUpManager : MonoBehaviour
 {
     public GameObject powerUpPrefab; // Reference to the power-up prefab
     public float spawnInterval = 10f; // Time interval between spawns
-    public int maxPowerUps = 3; // Maximum number of power-ups allowed to be active at the same time
+    public int maxPowerUps = 1; // Maximum number of power-ups allowed to be active at the same time
     private List<GameObject> activePowerUps = new List<GameObject>(); // List to track active power-ups
 
     public List1 list1; // Reference to the List1 script
-    public bool SpawnPowerUpBool = true;
+
 
 
     public void Start()
@@ -25,19 +25,21 @@ public class PowerUpManager : MonoBehaviour
 
     IEnumerator SpawnPowerUpRoutine()
     {
-        while (true)
+        int counter = 0;
+        while (counter < 6)
         {
-            
+
             yield return new WaitForSeconds(spawnInterval);
 
             if (activePowerUps.Count < maxPowerUps)
             {
                 SpawnPowerUp();
+                counter++;
             }
             else
             {
-                 yield return new WaitForSeconds(1000f); 
-                   
+                yield return new WaitForSeconds(spawnInterval);
+
             }
         }
     }
@@ -45,51 +47,39 @@ public class PowerUpManager : MonoBehaviour
 
     void SpawnPowerUp()
     {
-        if (list1.tileObjects.Count == 0)
-        {
-            Debug.LogWarning("No tiles available for spawning power-ups.");
-            return;
-        }
 
-        // Get a random tile to spawn the power-up on
-        int randomIndex = Random.Range(0, list1.tileObjects.Count);
-        GameObject randomTile = list1.tileObjects[randomIndex];
+        
+         {
+             Debug.LogWarning("No tiles available for spawning power-ups.");
+             return;
+         }
 
-        // Check if a power-up is already on this tile
-        bool tileOccupied = false;
-        foreach (GameObject powerUp in activePowerUps)
-        {
-            if (powerUp != null && powerUp.transform.position == randomTile.transform.position)
-            {
-                tileOccupied = true;
-                break;
-            }
-        }
+         // Get a random tile to spawn the power-up on
+         int randomIndex = Random.Range(0, list1.tileObjects.Count);
+         GameObject randomTile = list1.tileObjects[randomIndex];
 
-        if (!tileOccupied)
-        {
-            // Spawn the power-up at the tile's position
-            GameObject powerUp = Instantiate(powerUpPrefab, randomTile.transform.position, Quaternion.identity);
-            activePowerUps.Add(powerUp);
+         // Check if a power-up is already on this tile
+        
+         foreach (GameObject powerUp in activePowerUps)
+         {
+             if (powerUp != null && powerUp.transform.position == randomTile.transform.position)
+             {
+                 
+                 break;
+             }
+         }
 
-            // Set the power-up's parent to keep the hierarchy organized (optional)
-            powerUp.transform.SetParent(randomTile.transform);
+         
+     }
 
-            Debug.Log("Power-up spawned on " + randomTile.name);
-        }
-        else
-        {
-            Debug.Log("Skipped spawning power-up as the tile is already occupied.");
-        }
-    }
-
-    public void RemovePowerUp(GameObject powerUp)
-    {
-        if (activePowerUps.Contains(powerUp))
-        {
-            activePowerUps.Remove(powerUp);
-            Destroy(powerUp);
-            Debug.Log("Power-up removed.");
-        }
+     public void RemovePowerUp(GameObject powerUp)
+     {
+         if (activePowerUps.Contains(powerUp))
+         {
+             activePowerUps.Remove(powerUp);
+             Destroy(powerUp);
+             Debug.Log("Power-up removed.");
+         }
+     
     }
 }
