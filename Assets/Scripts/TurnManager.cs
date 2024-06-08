@@ -32,13 +32,19 @@ public class TurnManager : MonoBehaviour
         UpdateMovesText(); // Update moves text after each move
     }
 
-    public void AddExtraMove()
+    public void AddExtraMove(int moves)
     {
-        // Increase the current moves directly
-        currentMoves--;
-        Debug.Log($"Extra move granted. Current moves: {currentMoves}/{maxMoves}");
+        currentMoves -= moves; // Adding or reducing moves
+        Debug.Log($"Moves adjusted by {moves}. Current moves: {currentMoves}/{maxMoves}");
 
         UpdateMovesText();
+    }
+
+    public void SkipTurn()
+    {
+        currentMoves = maxMoves; // Forces switch turn
+        Debug.Log("Turn skipped.");
+        SwitchTurn();
     }
 
     private void SwitchTurn()
