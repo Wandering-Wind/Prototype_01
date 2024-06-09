@@ -33,6 +33,7 @@ public class Movement : MonoBehaviour
         // Tile-based movement
         if (canMove)
         {
+<<<<<<< Updated upstream
             if (Input.GetKeyDown(KeyCode.UpArrow))
                 MovePlayer(Vector3.up);
             else if (Input.GetKeyDown(KeyCode.DownArrow))
@@ -41,6 +42,69 @@ public class Movement : MonoBehaviour
                 MovePlayer(Vector3.left);
             else if (Input.GetKeyDown(KeyCode.RightArrow))
                 MovePlayer(Vector3.right);
+=======
+            if (Input.GetKeyDown(KeyCode.UpArrow)) MovePlayer(Vector3.up);
+            else if (Input.GetKeyDown(KeyCode.DownArrow)) MovePlayer(Vector3.down);
+            else if (Input.GetKeyDown(KeyCode.LeftArrow)) MovePlayer(Vector3.left);
+            else if (Input.GetKeyDown(KeyCode.RightArrow)) MovePlayer(Vector3.right);
+        }
+    }
+
+    private void MovePlayer(Vector3 direction)
+    {
+        if (canMove)
+        {
+            float distance = isDoubleMove ? tileSize * 2f : tileSize;
+            targetPosition += direction * distance;
+            canMove = false;
+            StopMovement(movementCooldown);
+
+            if (turnManager != null)
+            {
+                turnManager.RegisterMove();
+            }
+        }
+    }
+
+    void LateUpdate()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PowerUp"))
+        {
+            if (powerUpManager != null)
+            {
+                //powerUpManager.RemovePowerUp(collision.gameObject); // Remove the power-up from the active list
+            }
+
+            Destroy(collision.gameObject);
+            Debug.Log("Power-up collected! Extra move granted.");
+            ShowExtraMoveIndicator(); // Display the indicator
+            if (turnManager != null)
+            {
+                turnManager.AddExtraMove(); // Grant an extra move
+            }
+        }
+    }
+
+    private void ShowExtraMoveIndicator()
+    {
+        if (extraMoveIndicator != null)
+        {
+            extraMoveIndicator.SetActive(true);
+            Invoke("HideExtraMoveIndicator", indicatorDisplayTime);
+        }
+    }
+
+    private void HideExtraMoveIndicator()
+    {
+        if (extraMoveIndicator != null)
+        {
+            extraMoveIndicator.SetActive(false);
+>>>>>>> Stashed changes
         }
     }
 
