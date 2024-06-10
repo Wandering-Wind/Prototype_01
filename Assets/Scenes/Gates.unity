@@ -285,11 +285,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b9b8d1e6b63f7848a5b5430b8462ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUpPrefab: {fileID: 1790234807}
-  spawnInterval: 5
-  maxPowerUps: 3
-  activePowerUps: []
-  list1: {fileID: 0}
 --- !u!114 &57664984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2755,11 +2750,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b9b8d1e6b63f7848a5b5430b8462ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUpPrefab: {fileID: 0}
-  spawnInterval: 10
-  maxPowerUps: 3
-  activePowerUps: []
-  list1: {fileID: 0}
 --- !u!114 &1028882265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2923,7 +2913,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.6089727, g: 0.229085, b: 0.6226415, a: 1}
   m_FlipX: 0
@@ -3810,11 +3800,49 @@ MonoBehaviour:
   - {fileID: 1224920538}
   - {fileID: 423853180}
   - {fileID: 892826092}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  offScreenTransform: {fileID: 0}
+  - {fileID: 1833460307}
+  - {fileID: 1380849955}
+  - {fileID: 1268132165}
+  - {fileID: 1558708392}
+  - {fileID: 995786751}
+  - {fileID: 2120749451}
+  - {fileID: 1033019904}
+  - {fileID: 1578316318}
+  - {fileID: 258265702}
+  - {fileID: 830889339}
+  - {fileID: 1394448810}
+  - {fileID: 1307386699}
+  - {fileID: 1491801941}
+  - {fileID: 797483059}
+  - {fileID: 1770151560}
+  - {fileID: 1781390645}
+  - {fileID: 150158310}
+  - {fileID: 1812595278}
+  - {fileID: 315393803}
+  - {fileID: 360903731}
+  - {fileID: 483884405}
+  - {fileID: 2072833171}
+  - {fileID: 1896596791}
+  - {fileID: 1346519636}
+  - {fileID: 1563579195}
+  - {fileID: 2096720487}
+  - {fileID: 509524890}
+  - {fileID: 974363067}
+  - {fileID: 1491460290}
+  - {fileID: 1267189799}
+  - {fileID: 1818960047}
+  - {fileID: 1869624211}
+  - {fileID: 1490258782}
+  - {fileID: 1737400489}
+  - {fileID: 675610006}
+  - {fileID: 768858494}
+  - {fileID: 427983633}
+  - {fileID: 1551337133}
+  - {fileID: 937029844}
+  - {fileID: 718244330}
+  - {fileID: 648797415}
+  - {fileID: 1543955253}
+  offScreenTransform: {fileID: 1961957012}
 --- !u!4 &1567605716
 Transform:
   m_ObjectHideFlags: 0
@@ -4151,7 +4179,7 @@ Transform:
   m_GameObject: {fileID: 1657660254}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.51, y: 2.96, z: 0}
+  m_LocalPosition: {x: -13.19, y: -0.34, z: 0}
   m_LocalScale: {x: 0.63937, y: 0.63937, z: 0.63937}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4619,11 +4647,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b9b8d1e6b63f7848a5b5430b8462ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUpPrefab: {fileID: 1790234807}
-  spawnInterval: 10
-  maxPowerUps: 5
-  activePowerUps: []
-  list1: {fileID: 57664984}
 --- !u!212 &1790234809
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5120,6 +5143,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 975733abec8ee6c4db25d3e660cc3fe4, type: 3}
+--- !u!1 &1961957011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1961957012}
+  m_Layer: 0
+  m_Name: OffsCRRNIE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1961957012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961957011}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.4319353, y: -0.84447247, z: 0.37201744}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1973816011 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8118726483044506060, guid: 975733abec8ee6c4db25d3e660cc3fe4, type: 3}
@@ -5499,3 +5553,4 @@ SceneRoots:
   - {fileID: 1101109903}
   - {fileID: 521847141}
   - {fileID: 1567605716}
+  - {fileID: 1961957012}
