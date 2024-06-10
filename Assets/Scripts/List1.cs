@@ -38,7 +38,7 @@ public class List1 : MonoBehaviour
 
     IEnumerator DestroyTilesSequence() //Function to destroy tiles in a sequence
     {
-        yield return new WaitForSeconds(45f);
+        yield return new WaitForSeconds(450f);
         DestroyTiles(new List<string> { "Tile1", "Tile2", "Tile3", "Tile4", "Tile5", "Tile6", "Tile7", "Tile8", "Tile14", "Tile15", "Tile21", "Tile22", "Tile28", "Tile29", "Tile", "Tile35", "Tile36", "Tile42", "Tile43", "Tile44", "Tile45", "Tile46", "Tile47", "Tile48", "Tile49" });
 
         yield return new WaitForSeconds(30f);
