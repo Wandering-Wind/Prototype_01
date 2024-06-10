@@ -627,7 +627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150181761318142689, guid: 0c946fd1467d66b40b60a7311e508824, type: 3}
       propertyPath: m_TagString
-      value: Player1
+      value: Playyer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1102,6 +1102,7 @@ GameObject:
   - component: {fileID: 521847141}
   - component: {fileID: 521847140}
   - component: {fileID: 521847139}
+  - component: {fileID: 521847142}
   m_Layer: 0
   m_Name: Mod4
   m_TagString: Untagged
@@ -1182,12 +1183,47 @@ Transform:
   m_GameObject: {fileID: 521847138}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.26, y: -4.22, z: 0}
+  m_LocalPosition: {x: -6.52, y: -0.88, z: 0}
   m_LocalScale: {x: 0.66766, y: 0.66766, z: 0.66766}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &521847142
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521847138}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.49999997
 --- !u!1001 &566724942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2853,6 +2889,7 @@ GameObject:
   - component: {fileID: 1092602367}
   - component: {fileID: 1092602366}
   - component: {fileID: 1092602365}
+  - component: {fileID: 1092602368}
   m_Layer: 0
   m_Name: Mod2
   m_TagString: Untagged
@@ -2934,12 +2971,47 @@ Transform:
   m_GameObject: {fileID: 1092602364}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.26, y: -1.52, z: 0}
+  m_LocalPosition: {x: -6.46, y: 0.94, z: 0}
   m_LocalScale: {x: 0.58988, y: 0.58988, z: 0.58988}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1092602368
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092602364}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!4 &1093025575 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8118726483044506060, guid: 975733abec8ee6c4db25d3e660cc3fe4, type: 3}
@@ -3037,7 +3109,7 @@ Transform:
   m_GameObject: {fileID: 1101109900}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.26, y: -2.87, z: 0}
+  m_LocalPosition: {x: -6.46, y: -0.02, z: 0}
   m_LocalScale: {x: 0.58988, y: 0.58988, z: 0.58988}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3792,56 +3864,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 966bda7c9acabca4cad402852c0b2e8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modifiers:
+  modifierPrefabs:
   - {fileID: 1657660254}
   - {fileID: 1092602364}
-  tiles:
-  - {fileID: 418696871}
-  - {fileID: 1224920538}
-  - {fileID: 423853180}
-  - {fileID: 892826092}
-  - {fileID: 1833460307}
-  - {fileID: 1380849955}
-  - {fileID: 1268132165}
-  - {fileID: 1558708392}
-  - {fileID: 995786751}
-  - {fileID: 2120749451}
-  - {fileID: 1033019904}
-  - {fileID: 1578316318}
-  - {fileID: 258265702}
-  - {fileID: 830889339}
-  - {fileID: 1394448810}
-  - {fileID: 1307386699}
-  - {fileID: 1491801941}
-  - {fileID: 797483059}
-  - {fileID: 1770151560}
-  - {fileID: 1781390645}
-  - {fileID: 150158310}
-  - {fileID: 1812595278}
-  - {fileID: 315393803}
-  - {fileID: 360903731}
-  - {fileID: 483884405}
-  - {fileID: 2072833171}
-  - {fileID: 1896596791}
-  - {fileID: 1346519636}
-  - {fileID: 1563579195}
-  - {fileID: 2096720487}
-  - {fileID: 509524890}
-  - {fileID: 974363067}
-  - {fileID: 1491460290}
-  - {fileID: 1267189799}
-  - {fileID: 1818960047}
-  - {fileID: 1869624211}
-  - {fileID: 1490258782}
-  - {fileID: 1737400489}
-  - {fileID: 675610006}
-  - {fileID: 768858494}
-  - {fileID: 427983633}
-  - {fileID: 1551337133}
-  - {fileID: 937029844}
-  - {fileID: 718244330}
-  - {fileID: 648797415}
-  - {fileID: 1543955253}
+  - {fileID: 521847138}
+  tileListScript: {fileID: 57664984}
   offScreenTransform: {fileID: 1961957012}
 --- !u!4 &1567605716
 Transform:
@@ -4179,7 +4206,7 @@ Transform:
   m_GameObject: {fileID: 1657660254}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.19, y: -0.34, z: 0}
+  m_LocalPosition: {x: -6.42, y: 2.22, z: 0}
   m_LocalScale: {x: 0.63937, y: 0.63937, z: 0.63937}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4908,7 +4935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150181761318142689, guid: 0c946fd1467d66b40b60a7311e508824, type: 3}
       propertyPath: m_TagString
-      value: Player2
+      value: Playyer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

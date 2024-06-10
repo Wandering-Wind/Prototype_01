@@ -12,6 +12,7 @@ TagManager:
   - Player1
   - Player2
   - PowerUp
+  - Playyer
   layers:
   - Default
   - TransparentFX

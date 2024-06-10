@@ -12,7 +12,7 @@ public class Modifier2 : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Playyer"))
         {
             turnManager.AddExtraMove(-lessMoves);  // Negative to reduce moves
             Destroy(gameObject);
