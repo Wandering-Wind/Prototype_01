@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Modifier3 : MonoBehaviour
+public class Modifier3 : MonoBehaviour //CANCELLED!!!
 {
     public int gatePassTurns = 2;
     private TurnManager turnManager;
@@ -14,7 +14,7 @@ public class Modifier3 : MonoBehaviour
 
   //  void OnTriggerEnter2D(Collider2D other)
    // {
-   //     if (other.CompareTag("Player"))
+   //     if (other.CompareTag("Player1"))
    //     {
   //          movement.AllowGatePass(gatePassTurns);
   //          Destroy(gameObject);

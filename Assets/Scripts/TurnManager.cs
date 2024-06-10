@@ -37,7 +37,15 @@ public class TurnManager : MonoBehaviour
         currentMoves -= moves; // Adding or reducing moves
         Debug.Log($"Moves adjusted by {moves}. Current moves: {currentMoves}/{maxMoves}");
 
-        UpdateMovesText();
+        // Check if current moves are zero or negative, and switch turn if so
+        if (currentMoves <= 0)
+        {
+            SwitchTurn();
+        }
+        else
+        {
+            UpdateMovesText();
+        }
     }
 
     public void SkipTurn()
@@ -75,7 +83,7 @@ public class TurnManager : MonoBehaviour
 
     private void UpdateMovesText()
     {
-        movesText.text = $"Moves Left: {maxMoves - currentMoves}";
+        movesText.text = $"Moves Left: {Mathf.Max(0, maxMoves - currentMoves)}";
     }
 
     private void DisplayTurnNotification()

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Modifier4 : MonoBehaviour
+public class Modifier4 : MonoBehaviour //SkipTurn
 {
     private TurnManager turnManager;
 
@@ -11,7 +11,7 @@ public class Modifier4 : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player1"))
         {
             turnManager.SkipTurn();
             Destroy(gameObject);

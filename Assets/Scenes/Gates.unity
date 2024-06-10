@@ -627,7 +627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150181761318142689, guid: 0c946fd1467d66b40b60a7311e508824, type: 3}
       propertyPath: m_TagString
-      value: Player1
+      value: Playyer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1103,7 +1103,7 @@ GameObject:
   - component: {fileID: 521847140}
   - component: {fileID: 521847139}
   m_Layer: 0
-  m_Name: Mod4
+  m_Name: Mod4 (SkipTurn)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1161,7 +1161,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.49246705, g: 0.76892036, b: 0.90943396, a: 1}
   m_FlipX: 0
@@ -2775,6 +2775,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementScript: {fileID: 0}
+--- !u!1 &1032022537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1032022538}
+  m_Layer: 0
+  m_Name: OffScreenTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1032022538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032022537}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.52, y: 0.94, z: 0.4122227}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1033019904 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 110148279472105029, guid: 975733abec8ee6c4db25d3e660cc3fe4, type: 3}
@@ -2853,9 +2884,10 @@ GameObject:
   - component: {fileID: 1092602367}
   - component: {fileID: 1092602366}
   - component: {fileID: 1092602365}
+  - component: {fileID: 1092602368}
   m_Layer: 0
-  m_Name: Mod2
-  m_TagString: Untagged
+  m_Name: Mod2 (MinusMove)
+  m_TagString: PowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2940,6 +2972,41 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1092602368
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092602364}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!4 &1093025575 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8118726483044506060, guid: 975733abec8ee6c4db25d3e660cc3fe4, type: 3}
@@ -2957,7 +3024,7 @@ GameObject:
   - component: {fileID: 1101109902}
   - component: {fileID: 1101109901}
   m_Layer: 0
-  m_Name: Mod3
+  m_Name: Mod3 CANCELLED
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3016,7 +3083,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.78867924, g: 0.17708072, b: 0.17708072, a: 1}
   m_FlipX: 0
@@ -3792,9 +3859,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 966bda7c9acabca4cad402852c0b2e8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modifiers:
+  modifierPrefabs:
   - {fileID: 1657660254}
   - {fileID: 1092602364}
+<<<<<<< Updated upstream
   tiles:
   - {fileID: 418696871}
   - {fileID: 1224920538}
@@ -3843,6 +3911,11 @@ MonoBehaviour:
   - {fileID: 648797415}
   - {fileID: 1543955253}
   offScreenTransform: {fileID: 1961957012}
+=======
+  - {fileID: 521847138}
+  tileListScript: {fileID: 57664984}
+  offScreenTransform: {fileID: 1032022538}
+>>>>>>> Stashed changes
 --- !u!4 &1567605716
 Transform:
   m_ObjectHideFlags: 0
@@ -4099,8 +4172,8 @@ GameObject:
   - component: {fileID: 1657660255}
   - component: {fileID: 1657660258}
   m_Layer: 0
-  m_Name: Mod1
-  m_TagString: Untagged
+  m_Name: Mod1 (AddMove)
+  m_TagString: PowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4179,7 +4252,11 @@ Transform:
   m_GameObject: {fileID: 1657660254}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: -13.19, y: -0.34, z: 0}
+=======
+  m_LocalPosition: {x: -13.31, y: 0.04, z: 0}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 0.63937, y: 0.63937, z: 0.63937}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4708,7 +4785,7 @@ Transform:
   m_GameObject: {fileID: 1790234807}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.97, y: 3.63, z: 0}
+  m_LocalPosition: {x: -13.97, y: 3.68, z: 0}
   m_LocalScale: {x: 0.5660714, y: 0.5660714, z: 0.5660714}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4908,7 +4985,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150181761318142689, guid: 0c946fd1467d66b40b60a7311e508824, type: 3}
       propertyPath: m_TagString
-      value: Player2
+      value: Playyer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4959,7 +5036,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -264, y: -77}
+  m_AnchoredPosition: {x: -266, y: -22}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1846971939
@@ -4995,7 +5072,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: +1
+  m_Text: Extra Moves
 --- !u!222 &1846971940
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5553,4 +5630,8 @@ SceneRoots:
   - {fileID: 1101109903}
   - {fileID: 521847141}
   - {fileID: 1567605716}
+<<<<<<< Updated upstream
   - {fileID: 1961957012}
+=======
+  - {fileID: 1032022538}
+>>>>>>> Stashed changes

@@ -9,9 +9,11 @@ TagManager:
   - Gate
   - TriggerEmpty
   - TriggerGateEmpty
+  - PowerUp
+  - M
   - Player1
   - Player2
-  - PowerUp
+  - Playyer
   layers:
   - Default
   - TransparentFX

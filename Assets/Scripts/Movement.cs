@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -6,10 +7,10 @@ public class Movement : MonoBehaviour
     private bool canMove = true;
     private float movementCooldown = 2f;
     private float cooldownTimer = 0f;
+    private bool canPassGates = false; // New variable to control gate passing
 
     public float tileSize = 1.25f;
     private Vector3 targetPosition;
-
 
     private TurnManager turnManager;
 
@@ -57,7 +58,6 @@ public class Movement : MonoBehaviour
         }
     }
 
-
     void LateUpdate()
     {
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
@@ -69,5 +69,15 @@ public class Movement : MonoBehaviour
         cooldownTimer = duration;
     }
 
+    public void AllowGatePass(int turns)
+    {
+        canPassGates = true;
+        StartCoroutine(GatePassCooldown(turns));
+    }
 
+    private IEnumerator GatePassCooldown(int turns)
+    {
+        yield return new WaitForSeconds(turns * movementCooldown); // Assuming movementCooldown is the turn duration
+        canPassGates = false;
+    }
 }
