@@ -4,11 +4,11 @@ public class Movement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     private bool canMove = true;
-    private float movementCooldown = 2f;
+    private float movementCooldown = 1f;
     private float cooldownTimer = 0f;
 
     public float tileSize = 1.25f;
-    private Vector3 targetPosition;
+    public Vector3 targetPosition;
 
 
     private TurnManager turnManager;

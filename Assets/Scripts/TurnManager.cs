@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class TurnManager : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class TurnManager : MonoBehaviour
     public int maxMoves = 5;
     private int currentMoves = 0;
     public bool isPlayer1Turn = true;
-    public bool isPlayer2Turn = true;
+    public bool isPlayer2Turn = false;
 
     public Text movesText; // Reference to the UI Text object for moves
     public Text turnNotificationText; // Reference to the UI Text object for turn notification
@@ -27,9 +28,25 @@ public class TurnManager : MonoBehaviour
 
         if (currentMoves >= maxMoves)
         {
-            SwitchTurn();
+            StartCoroutine(WaitForMovementAndSwitchTurn());
         }
         UpdateMovesText(); // Update moves text after each move
+    }
+
+    private IEnumerator WaitForMovementAndSwitchTurn()
+    {
+        Movement currentPlayer = isPlayer1Turn ? player1 : player2;
+        float timeout = 5f; // Timeout duration
+        float timer = 0f;
+
+        // Wait until the player has finished moving or timeout occurs
+        while (Vector3.Distance(currentPlayer.transform.position, currentPlayer.targetPosition) > 0.01f && timer < timeout)
+        {
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        SwitchTurn();
     }
 
     public void AddExtraMove(int moves)
@@ -51,6 +68,9 @@ public class TurnManager : MonoBehaviour
     {
         currentMoves = 0;
         isPlayer1Turn = !isPlayer1Turn;
+        isPlayer2Turn = !isPlayer1Turn;
+
+        Debug.Log($"SwitchTurn called. isPlayer1Turn: {isPlayer1Turn}, isPlayer2Turn: {isPlayer2Turn}");
 
         if (isPlayer1Turn)
         {
@@ -67,10 +87,10 @@ public class TurnManager : MonoBehaviour
 
     private void SetCurrentPlayer(Movement player)
     {
-        player1.enabled = player == player1;
-        player2.enabled = player == player2;
+        player1.enabled = (player == player1);
+        player2.enabled = (player == player2);
 
-        Debug.Log($"Current Player: {(player == player1 ? "Player 1" : "Player 2")}");
+        Debug.Log($"SetCurrentPlayer: {(player == player1 ? "Player 1" : "Player 2")}");
     }
 
     private void UpdateMovesText()
