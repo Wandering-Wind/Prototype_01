@@ -33,7 +33,7 @@ public class ModifierManager : MonoBehaviour
     {
         while (true)
         {
-            if (activeModifiers.Count < 2) // Limit active modifiers to 6
+            if (activeModifiers.Count < 10) // Limit active modifiers to 6
             {
                 // Get a random tile to spawn the modifier on
                 GameObject tile = GetRandomTile();

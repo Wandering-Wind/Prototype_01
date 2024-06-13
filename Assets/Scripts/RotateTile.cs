@@ -4,11 +4,8 @@ public class NewBehaviourScript : MonoBehaviour
 {
     public float rotationSpeed;
     public bool ClockwiseRotation;
-    
-    private TurnManager turnManager;
 
-    
-    
+    private TurnManager turnManager;
 
     void Start()
     {
@@ -17,8 +14,6 @@ public class NewBehaviourScript : MonoBehaviour
 
     void Update()
     {
-
-        IsActivePlayer();
         // Continuous rotation logic can be enabled if required
         // if (ClockwiseRotation == false)
         // {
@@ -33,20 +28,21 @@ public class NewBehaviourScript : MonoBehaviour
 
     private void OnMouseDown()
     {
-        // Only allow rotation if the current player is active
-        if (turnManager != null && turnManager.isPlayer1Turn)
+        // Only allow rotation if the current player is active and the panel is not active
+        if (turnManager != null && !TurnEndUIManager.isPanelActive)
         {
-            Debug.Log("rotates");
-            RotateTile();
-
-            // Notify the TurnManager that a rotation has been made
-            turnManager.RegisterMove();
-        }
-        else if (turnManager != null && turnManager.isPlayer2Turn)
-        {
-            Debug.Log("Rotates for Player2");
-            RotateTile();
-            turnManager.RegisterMove();
+            if (turnManager.isPlayer1Turn)
+            {
+                Debug.Log("rotates");
+                RotateTile();
+                turnManager.RegisterMove();
+            }
+            else if (turnManager.isPlayer2Turn)
+            {
+                Debug.Log("Rotates for Player2");
+                RotateTile();
+                turnManager.RegisterMove();
+            }
         }
     }
 
@@ -72,7 +68,8 @@ public class NewBehaviourScript : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
-        
+        {
             collision.transform.SetParent(null, false);
         }
     }
+}

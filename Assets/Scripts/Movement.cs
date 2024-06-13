@@ -10,7 +10,6 @@ public class Movement : MonoBehaviour
     public float tileSize = 1.25f;
     public Vector3 targetPosition;
 
-
     private TurnManager turnManager;
 
     void Start()
@@ -21,7 +20,7 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if (!enabled) return;
+        if (!enabled || TurnEndUIManager.isPanelActive) return; // Disable movement if the panel is active
 
         if (!canMove)
         {
@@ -57,7 +56,6 @@ public class Movement : MonoBehaviour
         }
     }
 
-
     void LateUpdate()
     {
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
@@ -68,6 +66,4 @@ public class Movement : MonoBehaviour
         canMove = false;
         cooldownTimer = duration;
     }
-
-
 }

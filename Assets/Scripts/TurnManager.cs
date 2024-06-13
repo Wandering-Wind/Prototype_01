@@ -14,6 +14,8 @@ public class TurnManager : MonoBehaviour
     public Text movesText; // Reference to the UI Text object for moves
     public Text turnNotificationText; // Reference to the UI Text object for turn notification
 
+    public TurnEndUIManager turnEndUIManager; // Reference to TurnEndUIManager
+
     void Start()
     {
         SetCurrentPlayer(player1);
@@ -46,7 +48,15 @@ public class TurnManager : MonoBehaviour
             yield return null;
         }
 
-        SwitchTurn();
+        // Show the turn end panel
+        if (turnEndUIManager != null)
+        {
+            turnEndUIManager.ShowTurnEndPanel();
+        }
+        else
+        {
+            Debug.LogError("TurnEndUIManager not assigned in TurnManager.");
+        }
     }
 
     public void AddExtraMove(int moves)
@@ -64,7 +74,7 @@ public class TurnManager : MonoBehaviour
         SwitchTurn();
     }
 
-    private void SwitchTurn()
+    public void SwitchTurn()
     {
         currentMoves = 0;
         isPlayer1Turn = !isPlayer1Turn;
