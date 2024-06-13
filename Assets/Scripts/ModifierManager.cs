@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ModifierManager : MonoBehaviour
 {
@@ -8,8 +9,11 @@ public class ModifierManager : MonoBehaviour
     public List1 tileListScript; // Reference to List1.cs script
     public Transform offScreenTransform; // Location to hide unused modifiers
 
+    public List<string> excludedTileNames; // List of tile names to exclude
     private List<GameObject> activeModifiers = new List<GameObject>();
     private HashSet<GameObject> occupiedTiles = new HashSet<GameObject>();
+
+    public Text modifierMessageText;  // Reference to the UI Text element for displaying messages
 
     void Start()
     {
@@ -29,10 +33,7 @@ public class ModifierManager : MonoBehaviour
     {
         while (true)
         {
-
-
-
-            if (activeModifiers.Count < 6) // Limit active modifiers to 6
+            if (activeModifiers.Count < 10) // Limit active modifiers to 6
             {
                 // Get a random tile to spawn the modifier on
                 GameObject tile = GetRandomTile();
@@ -43,6 +44,19 @@ public class ModifierManager : MonoBehaviour
                     GameObject modifier = Instantiate(modifierPrefab);
 
                     modifier.transform.position = tile.transform.position;
+
+                    // Set the message text reference for the modifier
+                    Modifier1 mod1 = modifier.GetComponent<Modifier1>();
+                    if (mod1 != null)
+                    {
+                        mod1.modifierMessageText = modifierMessageText;
+                    }
+
+                    Modifier2 mod2 = modifier.GetComponent<Modifier2>();
+                    if (mod2 != null)
+                    {
+                        mod2.modifierMessageText = modifierMessageText;
+                    }
 
                     // Add modifier to active list and occupied tile set
                     activeModifiers.Add(modifier);
@@ -55,9 +69,7 @@ public class ModifierManager : MonoBehaviour
 
             // Wait for a certain interval before spawning another modifier
             yield return new WaitForSeconds(5f); // Adjust spawn interval as needed
-
         }
-
     }
 
     GameObject GetRandomTile()
@@ -65,7 +77,7 @@ public class ModifierManager : MonoBehaviour
         List<GameObject> availableTiles = new List<GameObject>();
         foreach (GameObject tile in tileListScript.tileObjects)
         {
-            if (!occupiedTiles.Contains(tile))
+            if (!occupiedTiles.Contains(tile) && !excludedTileNames.Contains(tile.name))
             {
                 availableTiles.Add(tile);
             }
@@ -95,21 +107,3 @@ public class ModifierManager : MonoBehaviour
         Destroy(modifier);
     }
 }
-
-/*finds a random number from the list of tiles (excluding the first and last. Lists start at 0 so the tiles would be 0-48).
-
-for (int i = 0; i < num_powerups; i++)
-{
-    //get a random number from 1 to 47
-    int r = Random.Range(1, 47);
-    //Get reference to the tile so we can work with it
-    Transform tile = boardParent.GetChild(r);
-    //Do some wizardry by Taytay
-    Instantiate(powerUp_prefab, tile.position, tile.rotation, this.transform);
-
-    this.transform.GetChild(i).gameObject.SetActive(true);
-    Debug.Log("Instantiation code"); //checking
-    }
-    */
-
-

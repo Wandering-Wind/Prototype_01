@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gates.unity
     guid: 6f7a2091a5646744fb621b64e4aa73ed
+  - enabled: 1
+    path: Assets/Scenes/PlayerSwitchScreen.unity
+    guid: e6a5bcc1d50539f41be00854d75642b7
   m_configObjects: {}
