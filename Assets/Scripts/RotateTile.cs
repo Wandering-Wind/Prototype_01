@@ -7,8 +7,13 @@ public class NewBehaviourScript : MonoBehaviour
     
     private TurnManager turnManager;
 
-    
-    
+    AudioManager audioManager;
+
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     void Start()
     {
@@ -53,6 +58,7 @@ public class NewBehaviourScript : MonoBehaviour
     public void RotateTile()
     {
         transform.Rotate(0, 0, -90);
+        audioManager.PlaySFX(audioManager.tile);
     }
 
     private bool IsActivePlayer()
