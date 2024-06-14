@@ -6,6 +6,7 @@ public class NewBehaviourScript : MonoBehaviour
     public bool ClockwiseRotation;
 
     private TurnManager turnManager;
+    //AudioManager audioManager;
 
     void Start()
     {
@@ -49,6 +50,8 @@ public class NewBehaviourScript : MonoBehaviour
     public void RotateTile()
     {
         transform.Rotate(0, 0, -90);
+       // audioManager.PlaySFX(audioManager.tileMusic); 
+       //This code somehow messes with the player switch communicator
     }
 
     private bool IsActivePlayer()

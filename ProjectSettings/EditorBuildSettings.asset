@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Gates.unity
     guid: 6f7a2091a5646744fb621b64e4aa73ed
   - enabled: 1
-    path: Assets/Scenes/PlayerSwitchScreen.unity
-    guid: e6a5bcc1d50539f41be00854d75642b7
+    path: Assets/Scenes/WinScene.unity
+    guid: f574894119eec3d43b21bf112b795409
+  - enabled: 1
+    path: Assets/Scenes/LoseScene.unity
+    guid: 05c9d3ab7b10f0844a8d947737da0e3b
+  - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: ac95553cd1744914085a88406932839a
   m_configObjects: {}
