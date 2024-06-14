@@ -25,7 +25,7 @@ public class WinCondition : MonoBehaviour
         if (other.CompareTag("Playyer"))
         {
             GameData.winnerName = winnerName;
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
     }
 }

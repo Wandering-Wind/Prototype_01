@@ -73,7 +73,7 @@ public class List1 : MonoBehaviour
                 Debug.Log(deadPlayerName + " is on " + tileName + " . Player loses");
                 LoseGameData.deadPlayerName = deadPlayerName;
                 //Implementing the lose condition here
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(3);
             }
 
             Destroy(tileObject);
