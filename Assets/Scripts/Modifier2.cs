@@ -23,8 +23,18 @@ public class Modifier2 : MonoBehaviour
             turnManager.AddExtraMove(-lessMoves); // Subtract moves
             DisplayMessage("Moves reduced!");
             myCollider.enabled = false; // Disable the collider to prevent further triggers
-            Destroy(gameObject);
+                                        // Destroy(gameObject);
+            MoveOffScreen();
         }
+    }
+
+
+
+    private void MoveOffScreen()
+    {
+        // Set the off-screen position, e.g., far outside the camera's view
+        Vector3 offScreenPosition = new Vector3(-1000, -1000, 0);
+        transform.position = offScreenPosition;
     }
 
     private void DisplayMessage(string message)

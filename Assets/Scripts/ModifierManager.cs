@@ -104,6 +104,6 @@ public class ModifierManager : MonoBehaviour
 
         // Move the modifier off-screen and destroy it
         modifier.transform.position = offScreenTransform.position;
-        Destroy(modifier);
+        //Destroy(modifier);
     }
 }
