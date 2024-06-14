@@ -6,6 +6,7 @@ public class NewBehaviourScript : MonoBehaviour
     public bool ClockwiseRotation;
 
     private TurnManager turnManager;
+    AudioManager audioManager;
 
     
     
