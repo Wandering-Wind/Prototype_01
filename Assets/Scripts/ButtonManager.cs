@@ -25,4 +25,9 @@ public class ButtonManager : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void TutorialScene()
+    {
+        SceneManager.LoadScene(4);
+    }
 }
